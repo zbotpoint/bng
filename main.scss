@@ -1,0 +1,94 @@
+@use "sass:map";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$palettes: (
+        base: (
+                "black": #000,
+                "grey-1": #222,
+                "grey-2": #444,
+                "grey-3": #888,
+                "grey-4": #ccc,
+                "white": #fff
+        ),
+        brand: (
+                "blue": #201e5c,
+                "gold": #f7d116,
+                "l-blue": #a2a0de,
+                "l-gold": #f7edba,
+                "d-blue": #090829,
+                "d-gold": #3f3c2f,
+        ),
+        rainbow: (
+                "red":#f72116,
+                "orange":#f78f16,
+                "yellow":#f7d316,
+                "green":#589c2b,
+                "blue":#4646a2,
+                "purple":#6c1a86
+        ),
+        skule: (
+                "black": #0a0a0a,
+                "white": #FFF,
+                "blue": #59a1c6,
+                "gold": #ffec8e,
+                "purple": #8372bb,
+                "green": #68ba98,
+                "teal": #5da7a7,
+                "orange": #ffcf8e,
+                "red": #ff8e8e
+        )
+);
+@function palette($palette: base, $tone: 'black') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// breakpoint sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@each $color, $val in map-get($palettes,brand) {
+  .bg-#{$color} {
+    background-color: $val;
+  }
+  .text-#{$color} {
+    color: $val;
+  }
+  .border-#{$color} {
+    border-color: $val !important;
+  }
+}
+
+html, body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.nav-link {
+  color: palette(brand, "l-blue") !important;
+  &:hover {
+    color: palette(brand,"l-gold") !important;
+  }
+  .active > & {
+    color: palette(base,"white") !important;
+  }
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.logo {
+  height: 40vh;
+}
+@media screen and (min-width: $md) {
+  .logo {
+    height: 20vh;
+  }
+}
+
+.nav-border {
+  border-bottom: dashed 1px;
+}
