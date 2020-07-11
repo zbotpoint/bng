@@ -559,7 +559,7 @@ pre code {
   }
 }
 
-.container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+.container-fluid, .title-container, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -3945,6 +3945,7 @@ input[type=button].btn-block {
 }
 .navbar .container,
 .navbar .container-fluid,
+.navbar .title-container,
 .navbar .container-sm,
 .navbar .container-md,
 .navbar .container-lg,
@@ -4020,6 +4021,7 @@ input[type=button].btn-block {
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.navbar-expand-sm > .title-container,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
@@ -4045,6 +4047,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.navbar-expand-sm > .title-container,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
@@ -4062,6 +4065,7 @@ input[type=button].btn-block {
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.navbar-expand-md > .title-container,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
 .navbar-expand-md > .container-lg,
@@ -4087,6 +4091,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.navbar-expand-md > .title-container,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
 .navbar-expand-md > .container-lg,
@@ -4104,6 +4109,7 @@ input[type=button].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > .title-container,
 .navbar-expand-lg > .container-sm,
 .navbar-expand-lg > .container-md,
 .navbar-expand-lg > .container-lg,
@@ -4129,6 +4135,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > .title-container,
 .navbar-expand-lg > .container-sm,
 .navbar-expand-lg > .container-md,
 .navbar-expand-lg > .container-lg,
@@ -4146,6 +4153,7 @@ input[type=button].btn-block {
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.navbar-expand-xl > .title-container,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
 .navbar-expand-xl > .container-lg,
@@ -4171,6 +4179,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.navbar-expand-xl > .title-container,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
 .navbar-expand-xl > .container-lg,
@@ -4191,6 +4200,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.navbar-expand > .title-container,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
@@ -4210,6 +4220,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.navbar-expand > .title-container,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
@@ -9934,15 +9945,15 @@ h3 {
 }
 
 .bg-l-blue {
-  background-color: #a2a0de;
+  background-color: #8280fe;
 }
 
 .text-l-blue {
-  color: #a2a0de;
+  color: #8280fe;
 }
 
 .border-l-blue {
-  border-color: #a2a0de !important;
+  border-color: #8280fe !important;
 }
 
 .bg-l-gold {
@@ -9981,14 +9992,202 @@ h3 {
   border-color: #3f3c2f !important;
 }
 
+.border-top-dashed {
+  border-top: 1px dashed;
+}
+
+.border-right-dashed {
+  border-right: 1px dashed;
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed;
+}
+
+.border-left-dashed {
+  border-left: 1px dashed;
+}
+
+.pt-6 {
+  padding-top: 3.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 3.5rem;
+}
+
+.mt-6 {
+  margin-top: 3.5rem;
+}
+
+.mt-n6 {
+  margin-top: -3.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-n6 {
+  margin-bottom: -3.5rem;
+}
+
+.pt-7 {
+  padding-top: 4rem;
+}
+
+.pb-7 {
+  padding-bottom: 4rem;
+}
+
+.mt-7 {
+  margin-top: 4rem;
+}
+
+.mt-n7 {
+  margin-top: -4rem;
+}
+
+.mb-7 {
+  margin-bottom: 4rem;
+}
+
+.mb-n7 {
+  margin-bottom: -4rem;
+}
+
+.pt-8 {
+  padding-top: 4.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 4.5rem;
+}
+
+.mt-8 {
+  margin-top: 4.5rem;
+}
+
+.mt-n8 {
+  margin-top: -4.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 4.5rem;
+}
+
+.mb-n8 {
+  margin-bottom: -4.5rem;
+}
+
+.pt-9 {
+  padding-top: 5rem;
+}
+
+.pb-9 {
+  padding-bottom: 5rem;
+}
+
+.mt-9 {
+  margin-top: 5rem;
+}
+
+.mt-n9 {
+  margin-top: -5rem;
+}
+
+.mb-9 {
+  margin-bottom: 5rem;
+}
+
+.mb-n9 {
+  margin-bottom: -5rem;
+}
+
+.pt-10 {
+  padding-top: 5.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 5.5rem;
+}
+
+.mt-10 {
+  margin-top: 5.5rem;
+}
+
+.mt-n10 {
+  margin-top: -5.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 5.5rem;
+}
+
+.mb-n10 {
+  margin-bottom: -5.5rem;
+}
+
+.pt-11 {
+  padding-top: 6rem;
+}
+
+.pb-11 {
+  padding-bottom: 6rem;
+}
+
+.mt-11 {
+  margin-top: 6rem;
+}
+
+.mt-n11 {
+  margin-top: -6rem;
+}
+
+.mb-11 {
+  margin-bottom: 6rem;
+}
+
+.mb-n11 {
+  margin-bottom: -6rem;
+}
+
+.pt-12 {
+  padding-top: 6.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 6.5rem;
+}
+
+.mt-12 {
+  margin-top: 6.5rem;
+}
+
+.mt-n12 {
+  margin-top: -6.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 6.5rem;
+}
+
+.mb-n12 {
+  margin-bottom: -6.5rem;
+}
+
+.bg-offblue {
+  background-color: #201e50;
+}
+
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .nav-link {
-  color: #a2a0de !important;
+  color: #8280fe !important;
 }
 .nav-link:hover {
   color: #f7edba !important;
@@ -10001,17 +10200,54 @@ h1 {
   font-size: 80px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 .logo {
   height: 40vh;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .logo {
     height: 20vh;
   }
 }
+.title-container {
+  margin: 30vh 0 0;
+}
+
+body > section {
+  height: 50rem;
+}
+body > section:first-of-type {
+  height: 120vh;
+}
+
+.pt-6 {
+  padding-top: 3.5rem !important;
+}
+
+.mt-6 {
+  margin-top: 3.5rem !important;
+}
+
 .nav-border {
-  border-bottom: dashed 1px;
+  margin: 0 -15px;
+  border-width: 1px;
+  pointer-events: none;
+}
+
+.section-body, .v-line {
+  height: 46.5rem;
+}
+
+.v-line {
+  pointer-events: none;
+}
+
+.footer {
+  height: 3em;
 }
 
 /*# sourceMappingURL=main.css.map */

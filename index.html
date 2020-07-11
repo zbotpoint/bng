@@ -8,47 +8,124 @@
     <title>The Blue and Gold Committee</title>
 </head>
 <body>
-    <div class="h-100">
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-blue nav-border border-gold">
-            <a class="navbar-brand py-0" href="#">
-                <img src="BG.png" height="30" alt="B&G" class="nav-logo pr-2 mr-1 border-right border-gold"/>
-                <span class="align-middle text-gold">The Blue and Gold Committee</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-offblue">
+    <a class="navbar-brand py-0" href="#">
+        <img src="BG.png" height="30" alt="B&G" class="nav-logo pr-2 mr-1 border-right border-gold"/>
+        <span class="align-middle text-gold">The Blue and Gold Committee</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tools.html">Tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://godivaweek.skule.ca">Godiva Week</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container-fluid bg-l-gold h-100">
-            <div class="row h-100 ">
-                <div class="col-md-12 offset-md-0 bg-blue d-flex">
-                    <div class="text-center mx-auto my-5">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#Home" onclick="focus_home();">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About" onclick="focus_about();">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#FAQ" onclick="focus_faqs();">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact" onclick="focus_contact();">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tools.html">Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://godivaweek.skule.ca">Godiva Week</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="Home">
+    <div class="container-fluid bg-blue h-100">
+        <div class="nav-border border-bottom-dashed border-gold sticky-top pt-6"></div>
+        <div>
+            <div class="row">
+                <div class="col-md-12 offset-md-0 bg-blue">
+                    <div class="title-container text-center mx-auto">
                         <img class="d-inline-block logo mx-3" src="G-mono.png" alt="B&G">
                         <h1 class="text-gold align-middle d-inline-block mx-3">The Blue & Gold Committee</h1>
+                    </div>
+                    <br>
+                    <div class="text-center mx-auto">
+                        <h3 class="text-gold align-middle">A SPECIAL KIND OF SPIRIT COMMITTEE</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section id="About">
+    <div class="container-fluid bg-l-gold h-100">
+        <div class="nav-border border-bottom-dashed border-blue sticky-top pt-6"></div>
+        <div class="row section-body">
+            <div class="v-line col-md-10 d-none d-md-block position-absolute border-right-dashed border-blue"></div>
+            <div class="col-md-8 offset-md-1 d-flex">
+                <div class="mx-auto my-2 my-md-5">
+                    <h2 class="text-blue">What do we do?</h2>
+                    <p class="text-blue">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
+                        amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem
+                        ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor
+                        sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="FAQ">
+    <div class="container-fluid bg-blue h-100">
+        <div class="nav-border border-bottom-dashed border-gold sticky-top pt-6"></div>
+        <div class="row section-body">
+            <div class="v-line col-1 offset-md-1 d-none d-md-block position-absolute border-left-dashed border-gold"></div>
+            <div class="col-md-9 offset-md-2 d-flex">
+                <div class="mx-auto my-2 my-md-5">
+                    <h2 class="text-gold">Frequently Asked Questions</h2>
+                    <p class="text-gold">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
+                        amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem
+                        ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor
+                        sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Contact">
+    <div class="container-fluid bg-l-gold h-100">
+        <div class="nav-border border-bottom-dashed border-blue sticky-top pt-6"></div>
+        <div class="row section-body">
+            <div class="v-line col-md-10 d-none d-md-block position-absolute border-right-dashed border-blue"></div>
+            <div class="col-md-8 offset-md-1 d-flex">
+                <div class="mx-auto my-2 my-md-5">
+                    <h2 class="text-blue">Contact Us</h2>
+                    <p class="text-blue">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
+                        amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem
+                        ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor
+                        sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid bg-blue footer position-relative">
+    <span class="text-gold position-absolute" style="bottom:0.75em;left:1em;">Made by your fellow engineers at SkuleTM.</span>
+    <span class="text-gold position-absolute" style="bottom:0.75em;right:1em;">Copyright the Blue & Gold Committee, 2020.</span>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
 </body>
 </html>

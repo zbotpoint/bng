@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 @import "node_modules/bootstrap/scss/bootstrap";
 
 $palettes: (
@@ -13,7 +14,7 @@ $palettes: (
         brand: (
                 "blue": #201e5c,
                 "gold": #f7d116,
-                "l-blue": #a2a0de,
+                "l-blue": #8280fe,
                 "l-gold": #f7edba,
                 "d-blue": #090829,
                 "d-gold": #3f3c2f,
@@ -41,13 +42,6 @@ $palettes: (
 @function palette($palette: base, $tone: 'black') {
   @return map-get(map-get($palettes, $palette), $tone);
 }
-
-// breakpoint sizes
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
 @each $color, $val in map-get($palettes,brand) {
   .bg-#{$color} {
     background-color: $val;
@@ -59,11 +53,42 @@ $xl: 1200px;
     border-color: $val !important;
   }
 }
+@each $dir in "top" "right" "bottom" "left" {
+  .border-#{$dir}-dashed {
+    border-#{$dir}: 1px dashed;
+  }
+}
+@each $len in 6 7 8 9 10 11 12 {
+  .pt-#{$len} {
+    padding-top: #{$len*0.5+0.5}rem;
+  }
+  .pb-#{$len} {
+    padding-bottom: #{$len*0.5+0.5}rem;
+  }
+  .mt-#{$len} {
+    margin-top: #{$len*0.5+0.5}rem;
+  }
+  .mt-n#{$len} {
+    margin-top: -#{$len*0.5+0.5}rem;
+  }
+  .mb-#{$len} {
+    margin-bottom: #{$len*0.5+0.5}rem;
+  }
+  .mb-n#{$len} {
+    margin-bottom: -#{$len*0.5+0.5}rem;
+  }
+}
+
+$section-height: 50rem;
+
+.bg-offblue {
+  background-color: #201e50;
+}
 
 html, body {
-  height:100%;
   margin:0;
   padding:0;
+  scroll-behavior: smooth
 }
 
 .nav-link {
@@ -80,15 +105,51 @@ h1 {
   font-size: 80px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 .logo {
   height: 40vh;
 }
-@media screen and (min-width: $md) {
+@include media-breakpoint-up(md) {
   .logo {
     height: 20vh;
   }
 }
 
+.title-container {
+  @extend .container-fluid;
+  margin: 30vh 0 0;
+}
+
+body > section {
+  height: $section-height;
+  &:first-of-type {
+    height:120vh;
+  }
+}
+
+.pt-6 {
+  padding-top: 3.5rem !important;
+}
+
+.mt-6 {
+  margin-top: 3.5rem !important;
+}
+
 .nav-border {
-  border-bottom: dashed 1px;
+  margin: 0 -15px;
+  border-width: 1px;
+  pointer-events: none;
+}
+.section-body {
+  height: #{$section-height - 3.5rem};
+}
+.v-line {
+  @extend .section-body;
+  pointer-events: none;
+}
+.footer {
+  height:3em;
 }
