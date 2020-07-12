@@ -40,7 +40,7 @@ function highlightNavigation() {
         // get the position of the section
         var sectionTop = currentSection.offset().top;
         // if the user has scrolled over the top of the section
-        if (scrollPosition >= sectionTop) {
+        if (scrollPosition >= sectionTop-56) {
             // get the section id
             var id = currentSection.attr('id');
             // get the corresponding navigation link
@@ -57,6 +57,11 @@ function highlightNavigation() {
         }
     });
 }
+function collapse() {
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+        $("button.navbar-toggler").click();
+    }
+}
 /*
 function focus_home() {
     $('.nav-item').removeClass("active").eq(0).addClass("active");
@@ -71,7 +76,7 @@ function focus_contact() {
     $('.nav-item').removeClass("active").eq(3).addClass("active");
 }*/
 
-$(window).scroll( throttle(highlightNavigation,500) );
+$(window).scroll( throttle(highlightNavigation,100) );
 
 $(document).ready(highlightNavigation());
 

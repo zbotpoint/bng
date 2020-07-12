@@ -105,9 +105,22 @@ html, body {
 h1 {
   font-size: 80px;
 }
-
 h2 {
   font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: large;
+  }
 }
 
 span, p {
@@ -115,7 +128,7 @@ span, p {
 }
 
 .logo {
-  height: 40vh;
+  height: 30vh;
 }
 @include media-breakpoint-up(md) {
   .logo {
@@ -127,11 +140,42 @@ span, p {
   @extend .container-fluid;
   margin: 30vh 0 0;
 }
+@include media-breakpoint-down(sm) {
+  .title-container {
+    margin: 4.5em 0 0;
+  }
+}
 
 body > section {
   height: $section-height;
+  overflow: hidden;
   &:first-of-type {
     height:120vh;
+  }
+}
+.section-body {
+  height: #{$section-height - 3.5rem};
+}
+@include media-breakpoint-down(sm) {
+  body > section {
+    overflow-x: hidden;
+    height: 100%;
+    &:first-of-type {
+      min-height:50vh;
+      height: unset !important;
+    }
+  }
+  .section-body {
+    height: 100%;
+  }
+}
+:target::before {
+  margin-top:-4em;
+}
+@include media-breakpoint-down(sm) {
+  :target {
+    padding-top:3.5em;
+    margin-top:-3.5em;
   }
 }
 
@@ -144,12 +188,15 @@ body > section {
 }
 
 .nav-border {
+  display:none;
   margin: 0 -15px;
   border-width: 1px;
   pointer-events: none;
 }
-.section-body {
-  height: #{$section-height - 3.5rem};
+@include media-breakpoint-up(md) {
+  .nav-border {
+    display: block;
+  }
 }
 .v-line {
   @extend .section-body;

@@ -10205,12 +10205,29 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: large;
+  }
+}
 span, p {
   font-size: large;
 }
 
 .logo {
-  height: 40vh;
+  height: 30vh;
 }
 
 @media (min-width: 768px) {
@@ -10222,13 +10239,47 @@ span, p {
   margin: 30vh 0 0;
 }
 
+@media (max-width: 767.98px) {
+  .title-container {
+    margin: 4.5em 0 0;
+  }
+}
 body > section {
   height: 50rem;
+  overflow: hidden;
 }
 body > section:first-of-type {
   height: 120vh;
 }
 
+.section-body, .v-line {
+  height: 46.5rem;
+}
+
+@media (max-width: 767.98px) {
+  body > section {
+    overflow-x: hidden;
+    height: 100%;
+  }
+  body > section:first-of-type {
+    min-height: 50vh;
+    height: unset !important;
+  }
+
+  .section-body, .v-line {
+    height: 100%;
+  }
+}
+:target::before {
+  margin-top: -4em;
+}
+
+@media (max-width: 767.98px) {
+  :target {
+    padding-top: 3.5em;
+    margin-top: -3.5em;
+  }
+}
 .pt-6 {
   padding-top: 3.5rem !important;
 }
@@ -10238,15 +10289,17 @@ body > section:first-of-type {
 }
 
 .nav-border {
+  display: none;
   margin: 0 -15px;
   border-width: 1px;
   pointer-events: none;
 }
 
-.section-body, .v-line {
-  height: 46.5rem;
+@media (min-width: 768px) {
+  .nav-border {
+    display: block;
+  }
 }
-
 .v-line {
   pointer-events: none;
 }
