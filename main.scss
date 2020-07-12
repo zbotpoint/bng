@@ -14,7 +14,7 @@ $palettes: (
         brand: (
                 "blue": #201e5c,
                 "gold": #f7d116,
-                "l-blue": #8280fe,
+                "l-blue": #a2a0de,
                 "l-gold": #f7edba,
                 "d-blue": #090829,
                 "d-gold": #3f3c2f,
@@ -93,11 +93,12 @@ html, body {
 
 .nav-link {
   color: palette(brand, "l-blue") !important;
+  transition: color 0.5s ease-in-out;
   &:hover {
     color: palette(brand,"l-gold") !important;
   }
   .active > & {
-    color: palette(base,"white") !important;
+    color: palette(brand,"gold") !important;
   }
 }
 
@@ -107,6 +108,10 @@ h1 {
 
 h2 {
   font-size: 40px;
+}
+
+span, p {
+  font-size: large;
 }
 
 .logo {

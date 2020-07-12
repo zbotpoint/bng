@@ -9945,15 +9945,15 @@ h3 {
 }
 
 .bg-l-blue {
-  background-color: #8280fe;
+  background-color: #a2a0de;
 }
 
 .text-l-blue {
-  color: #8280fe;
+  color: #a2a0de;
 }
 
 .border-l-blue {
-  border-color: #8280fe !important;
+  border-color: #a2a0de !important;
 }
 
 .bg-l-gold {
@@ -10187,13 +10187,14 @@ html, body {
 }
 
 .nav-link {
-  color: #8280fe !important;
+  color: #a2a0de !important;
+  transition: color 0.5s ease-in-out;
 }
 .nav-link:hover {
   color: #f7edba !important;
 }
 .active > .nav-link {
-  color: #fff !important;
+  color: #f7d116 !important;
 }
 
 h1 {
@@ -10202,6 +10203,10 @@ h1 {
 
 h2 {
   font-size: 40px;
+}
+
+span, p {
+  font-size: large;
 }
 
 .logo {

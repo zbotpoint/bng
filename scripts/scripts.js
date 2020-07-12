@@ -57,8 +57,23 @@ function highlightNavigation() {
         }
     });
 }
+/*
+function focus_home() {
+    $('.nav-item').removeClass("active").eq(0).addClass("active");
+}
+function focus_about() {
+    $('.nav-item').removeClass("active").eq(1).addClass("active");
+}
+function focus_faqs() {
+    $('.nav-item').removeClass("active").eq(2).addClass("active");
+}
+function focus_contact() {
+    $('.nav-item').removeClass("active").eq(3).addClass("active");
+}*/
 
-$(window).scroll( throttle(highlightNavigation,100) );
+$(window).scroll( throttle(highlightNavigation,500) );
+
+$(document).ready(highlightNavigation());
 
 // if you don't want to throttle the function use this instead:
 // $(window).scroll( highlightNavigation );
