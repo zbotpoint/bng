@@ -40,7 +40,7 @@ function highlightNavigation() {
         // get the position of the section
         var sectionTop = currentSection.offset().top;
         // if the user has scrolled over the top of the section
-        if (scrollPosition >= sectionTop-56) {
+        if (scrollPosition >= sectionTop-56) { // hehe funny magic number
             // get the section id
             var id = currentSection.attr('id');
             // get the corresponding navigation link
