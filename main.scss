@@ -78,6 +78,31 @@ $palettes: (
     margin-bottom: -#{$len*0.5+0.5}rem;
   }
 }
+@each $elem in "a" "p" "span" {
+  #{$elem} {
+    font-size:large;
+    .bg-gold &, .bg-l-gold & {
+      &:not([class^="text-"]) {
+        @if $elem=="a" {
+          @extend .text-l-blue;
+        }
+        @else {
+          @extend .text-blue;
+        }
+      }
+    }
+    .bg-blue &, .bg-l-blue & {
+      &:not([class^="text-"]) {
+        @if $elem=="a" {
+          @extend .text-l-gold;
+        }
+        @else {
+          @extend .text-gold;
+        }
+      }
+    }
+  }
+}
 
 $section-height: 50rem;
 
@@ -123,8 +148,18 @@ h3 {
   }
 }
 
-span, p {
-  font-size: large;
+.bg-l-gold a:not([class]), .bg-gold a:not([class]) {
+  @extend .text-l-blue;
+}
+
+.bg-l-blue a:not([class]), .bg-blue a:not([class]) {
+  @extend .text-l-gold;
+}
+
+// maybe make this md-up only
+.bg-img-index {
+  background-image: url("img-index.png");
+  object-fit: cover;
 }
 
 .logo {
@@ -133,6 +168,15 @@ span, p {
 @include media-breakpoint-up(md) {
   .logo {
     height: 20vh;
+  }
+}
+
+.logo-contact {
+  height: 18vh;
+}
+@include media-breakpoint-down(sm) {
+  .logo-contact {
+    display: none;
   }
 }
 

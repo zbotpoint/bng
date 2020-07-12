@@ -9924,7 +9924,7 @@ h3 {
   background-color: #201e5c;
 }
 
-.text-blue {
+.text-blue, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c;
 }
 
@@ -9936,7 +9936,7 @@ h3 {
   background-color: #f7d116;
 }
 
-.text-gold {
+.text-gold, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
   color: #f7d116;
 }
 
@@ -9948,7 +9948,7 @@ h3 {
   background-color: #a2a0de;
 }
 
-.text-l-blue {
+.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .bg-gold a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
   color: #a2a0de;
 }
 
@@ -9960,7 +9960,7 @@ h3 {
   background-color: #f7edba;
 }
 
-.text-l-gold {
+.text-l-gold, .bg-l-blue a:not([class]), .bg-blue a:not([class]), .bg-blue a:not([class^=text-]), .bg-l-blue a:not([class^=text-]) {
   color: #f7edba;
 }
 
@@ -10176,6 +10176,15 @@ h3 {
   margin-bottom: -6.5rem;
 }
 
+a {
+  font-size: large;
+}
+p {
+  font-size: large;
+}
+span {
+  font-size: large;
+}
 .bg-offblue {
   background-color: #201e50;
 }
@@ -10222,8 +10231,9 @@ h3 {
     font-size: large;
   }
 }
-span, p {
-  font-size: large;
+.bg-img-index {
+  background-image: url("img-index.png");
+  object-fit: cover;
 }
 
 .logo {
@@ -10233,6 +10243,15 @@ span, p {
 @media (min-width: 768px) {
   .logo {
     height: 20vh;
+  }
+}
+.logo-contact {
+  height: 18vh;
+}
+
+@media (max-width: 767.98px) {
+  .logo-contact {
+    display: none;
   }
 }
 .title-container {
