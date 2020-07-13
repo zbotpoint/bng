@@ -249,3 +249,12 @@ body > section {
 .footer {
   height:3em;
 }
+span a {
+  font-size: xx-large;
+  @extend .mx-2;
+  @extend .my-2;
+  text-decoration: none !important;
+  & i {
+    @extend .text-blue;
+  }
+}

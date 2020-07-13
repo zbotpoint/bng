@@ -7469,22 +7469,26 @@ button.bg-dark:focus {
 }
 
 .mt-2,
-.my-2 {
+.my-2,
+span a {
   margin-top: 0.5rem !important;
 }
 
 .mr-2,
-.mx-2 {
+.mx-2,
+span a {
   margin-right: 0.5rem !important;
 }
 
 .mb-2,
-.my-2 {
+.my-2,
+span a {
   margin-bottom: 0.5rem !important;
 }
 
 .ml-2,
-.mx-2 {
+.mx-2,
+span a {
   margin-left: 0.5rem !important;
 }
 
@@ -9924,7 +9928,7 @@ h3 {
   background-color: #201e5c;
 }
 
-.text-blue, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
+.text-blue, span a i, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c;
 }
 
@@ -10325,6 +10329,11 @@ body > section:first-of-type {
 
 .footer {
   height: 3em;
+}
+
+span a {
+  font-size: xx-large;
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
