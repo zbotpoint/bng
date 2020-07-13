@@ -10221,6 +10221,11 @@ h2 {
 h3 {
   font-size: 30px;
 }
+@media (max-width: 1199.98px) {
+  h3 {
+    font-size: large;
+  }
+}
 
 @media (max-width: 767.98px) {
   h1 {
@@ -10230,14 +10235,15 @@ h3 {
   h2 {
     font-size: 25px;
   }
-
-  h3 {
-    font-size: large;
-  }
 }
 .bg-img-index {
-  background-image: url("img-index.png");
-  object-fit: cover;
+  background-color: #201e5c;
+}
+@media (min-width: 768px) {
+  .bg-img-index {
+    background-image: url("img-index.png");
+    object-fit: cover;
+  }
 }
 
 .logo {
@@ -10279,7 +10285,7 @@ body > section:first-of-type {
   height: 46.5rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   body > section {
     overflow-x: hidden;
     height: 100%;
@@ -10334,6 +10340,34 @@ body > section:first-of-type {
 span.contact-text a {
   font-size: xx-large;
   text-decoration: none !important;
+}
+.signature-img {
+  margin-top: -12.25em;
+  z-index: 1;
+}
+@media screen and (max-width: 1700px) {
+  .signature-img {
+    height: 200px;
+    margin-top: -4em;
+  }
+}
+@media (max-width: 1199.98px) {
+  .signature-img {
+    height: 100px;
+    margin-top: -2.5em;
+  }
+}
+
+.about-job {
+  text-indent: -1.5em;
+  margin: 0 0 0 3em;
+}
+
+.about-body {
+  z-index: 2;
+}
+.about-body + div {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
