@@ -7470,25 +7470,25 @@ button.bg-dark:focus {
 
 .mt-2,
 .my-2,
-span a {
+span.contact-text a {
   margin-top: 0.5rem !important;
 }
 
 .mr-2,
 .mx-2,
-span a {
+span.contact-text a {
   margin-right: 0.5rem !important;
 }
 
 .mb-2,
 .my-2,
-span a {
+span.contact-text a {
   margin-bottom: 0.5rem !important;
 }
 
 .ml-2,
 .mx-2,
-span a {
+span.contact-text a {
   margin-left: 0.5rem !important;
 }
 
@@ -9928,7 +9928,7 @@ h3 {
   background-color: #201e5c;
 }
 
-.text-blue, span a i, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
+.text-blue, span.contact-text a i, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c;
 }
 
@@ -10331,7 +10331,7 @@ body > section:first-of-type {
   height: 3em;
 }
 
-span a {
+span.contact-text a {
   font-size: xx-large;
   text-decoration: none !important;
 }
