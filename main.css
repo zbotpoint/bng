@@ -10344,11 +10344,18 @@ span.contact-text a {
 .signature-img {
   margin-top: -12.25em;
   z-index: 1;
+  height: 300px;
 }
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1550px) {
+  .signature-img {
+    margin-top: -4em;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1700px) and (min-width: 1550px) {
   .signature-img {
     height: 200px;
-    margin-top: -4em;
+    margin-top: -6em;
   }
 }
 @media (max-width: 1199.98px) {
