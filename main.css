@@ -10415,4 +10415,12 @@ ul {
   background-color: rgba(32, 30, 92, 0.5) !important;
 }
 
+.tools {
+  margin-bottom: 0;
+}
+
+.tool-container {
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
