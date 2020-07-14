@@ -10328,8 +10328,8 @@ body > section:first-of-type {
   margin: 0 -15px;
   border-width: 1px;
   pointer-events: none;
-  z-index: 2000;
-  padding-top: 3.65em;
+  z-index: 1000;
+  padding-top: 3.69em;
 }
 
 @media (min-width: 768px) {
