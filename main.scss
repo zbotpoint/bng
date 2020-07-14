@@ -12,7 +12,7 @@ $palettes: (
                 "white": #fff
         ),
         brand: (
-                "blue": #201e5c,
+                "blue": #201e5c, //#26235e
                 "gold": #f7d116,
                 "l-blue": #a2a0de,
                 "l-gold": #f7edba,
@@ -133,6 +133,7 @@ h1,h2,h3,p,a,span {
 
 h1 {
   font-size: 80px;
+  font-weight: bold;
 }
 h2 {
   font-size: 40px;
@@ -199,7 +200,6 @@ h3 {
 
 body > section {
   height:100%;
-  overflow: hidden;
   &:first-of-type {
     height:120vh;
   }
@@ -245,6 +245,8 @@ body > section {
   margin: 0 -15px;
   border-width: 1px;
   pointer-events: none;
+  z-index: 2000;
+  padding-top: 3.65em;
 }
 @include media-breakpoint-up(md) {
   .nav-border {
@@ -308,4 +310,28 @@ span.contact-text a {
 .faq-hidden {
   @extend .d-md-none;
   @extend .d-block;
+}
+ul {
+  list-style: none;
+  padding:0;
+}
+.btn {
+  display: block;
+  -webkit-appearance: none;
+  border: 2px solid palette(brand,"gold");
+  @extend .m-4;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size:large;
+  @extend .text-blue;
+  @extend .bg-gold;
+  @include media-breakpoint-down(sm) {
+    width:100%;
+    margin:0.5em 0 !important;
+  }
+  &:hover {
+    border: 2px dashed palette(brand,"gold");
+    background-color:rgba(32,30,92,0.5) !important;
+    @extend .text-gold;
+  }
 }

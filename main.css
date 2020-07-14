@@ -7516,7 +7516,7 @@ span.contact-text a {
   margin-left: 1rem !important;
 }
 
-.m-4 {
+.m-4, .btn {
   margin: 1.5rem !important;
 }
 
@@ -9928,7 +9928,7 @@ h3 {
   background-color: #201e5c !important;
 }
 
-.text-blue, span.contact-text a i, .bg-gold span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
+.text-blue, .btn, span.contact-text a i, .bg-gold span:not([class^=text-]), .btn span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .btn p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c !important;
 }
 
@@ -9936,11 +9936,11 @@ h3 {
   border-color: #201e5c !important;
 }
 
-.bg-gold {
+.bg-gold, .btn {
   background-color: #f7d116 !important;
 }
 
-.text-gold, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
+.text-gold, .btn:hover, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
   color: #f7d116 !important;
 }
 
@@ -9952,7 +9952,7 @@ h3 {
   background-color: #a2a0de !important;
 }
 
-.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .bg-gold a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
+.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn a:not([class]), .bg-gold a:not([class^=text-]), .btn a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
   color: #a2a0de !important;
 }
 
@@ -10216,6 +10216,7 @@ h1, h2, h3, p, a, span {
 
 h1 {
   font-size: 80px;
+  font-weight: bold;
 }
 
 h2 {
@@ -10279,7 +10280,6 @@ h3 {
 }
 body > section {
   height: 100%;
-  overflow: hidden;
 }
 body > section:first-of-type {
   height: 120vh;
@@ -10328,6 +10328,8 @@ body > section:first-of-type {
   margin: 0 -15px;
   border-width: 1px;
   pointer-events: none;
+  z-index: 2000;
+  padding-top: 3.65em;
 }
 
 @media (min-width: 768px) {
@@ -10387,6 +10389,30 @@ span.contact-text a {
 
 .faq-body div {
   margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  display: block;
+  -webkit-appearance: none;
+  border: 2px solid #f7d116;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+@media (max-width: 767.98px) {
+  .btn {
+    width: 100%;
+    margin: 0.5em 0 !important;
+  }
+}
+.btn:hover {
+  border: 2px dashed #f7d116;
+  background-color: rgba(32, 30, 92, 0.5) !important;
 }
 
 /*# sourceMappingURL=main.css.map */
