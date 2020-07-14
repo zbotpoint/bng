@@ -10210,6 +10210,10 @@ html, body {
   color: #f7d116 !important;
 }
 
+h1, h2, h3, p, a, span {
+  font-family: "Lato", sans-serif;
+}
+
 h1 {
   font-size: 80px;
 }
