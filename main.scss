@@ -44,10 +44,10 @@ $palettes: (
 }
 @each $color, $val in map-get($palettes,brand) {
   .bg-#{$color} {
-    background-color: $val;
+    background-color: $val !important;
   }
   .text-#{$color} {
-    color: $val;
+    color: $val !important;
   }
   .border-#{$color} {
     border-color: $val !important;
@@ -194,7 +194,7 @@ h3 {
 }
 
 body > section {
-  height: $section-height;
+  height:100%;
   overflow: hidden;
   &:first-of-type {
     height:120vh;
@@ -202,6 +202,8 @@ body > section {
 }
 .section-body {
   height: #{$section-height - 3.5rem};
+  overflow:hidden;
+  position: relative;
 }
 @include media-breakpoint-down(md) {
   body > section {
@@ -246,7 +248,8 @@ body > section {
   }
 }
 .v-line {
-  @extend .section-body;
+  height:100%;
+  max-height: 100%;
   pointer-events: none;
 }
 .footer {
@@ -288,4 +291,17 @@ span.contact-text a {
   & + div {
     z-index: 1;
   }
+}
+.faq-body {
+  & a {
+    @extend b;
+    @extend .text-gold;
+  }
+  & div {
+    margin-bottom: 1em
+  }
+}
+.faq-hidden {
+  @extend .d-md-none;
+  @extend .d-block;
 }

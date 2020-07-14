@@ -62,6 +62,8 @@ function collapse() {
         $("button.navbar-toggler").click();
     }
 }
+
+
 /*
 function focus_home() {
     $('.nav-item').removeClass("active").eq(0).addClass("active");
@@ -79,6 +81,24 @@ function focus_contact() {
 $(window).scroll( throttle(highlightNavigation,100) );
 
 $(document).ready(highlightNavigation());
+
+$(document).ready(function () {
+    document.querySelectorAll('.faq-body p').forEach( item => {
+        $(item).addClass("faq-hidden");
+    })
+    document.querySelectorAll('.faq-body a').forEach(item => {
+        item.addEventListener('click', event => {
+            var p = $(event.target).next().next();
+            if (p.hasClass("faq-hidden")) {
+                p.removeClass("faq-hidden");
+            }
+            else {
+                p.addClass("faq-hidden");
+            }
+            event.preventDefault();
+        })
+    })
+});
 
 // if you don't want to throttle the function use this instead:
 // $(window).scroll( highlightNavigation );
