@@ -9,15 +9,18 @@ $palettes: (
                 "grey-2": #444,
                 "grey-3": #888,
                 "grey-4": #ccc,
-                "white": #fff
+                "white": #fff,
+                "alice-blue": #E5ECF4,
+                "lav-blue": #C3BEF7,
+                "slate-blue": #8A4FFF
         ),
         brand: (
                 "blue": #201e5c, //#26235e
                 "gold": #f7d116,
-                "l-blue": #a2a0de,
-                "l-gold": #f7edba,
-                "d-blue": #090829,
-                "d-gold": #3f3c2f,
+                "l-blue": #A5A3E1,
+                "l-gold": #FDF3C4,
+                "d-blue": #100F2E,
+                "d-gold": #625104,
         ),
         rainbow: (
                 "red":#f72116,
@@ -318,40 +321,67 @@ ul {
 .btn {
   display: block;
   -webkit-appearance: none;
-  border: 2px solid palette(brand,"gold");
   @extend .m-4;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size:large;
-  @extend .text-blue;
-  @extend .bg-gold;
   @include media-breakpoint-down(sm) {
     width:100%;
     margin:0.5em 0 !important;
   }
-  &:hover {
+  &-1 {
+    @extend .text-gold;
     border: 2px dashed palette(brand,"gold");
     background-color:rgba(32,30,92,0.5) !important;
-    @extend .text-gold;
+
+    &:hover {
+      border: 2px solid palette(brand,"gold");
+      color: palette(brand,"blue") !important;
+      background-color: palette(brand,"gold") !important;
+    }
+  }
+  &-2 {
+    border: 2px solid palette(brand,"gold");
+    @extend .text-blue;
+    @extend .bg-gold;
+
+    &:hover {
+      border: 2px dashed palette(brand,"gold");
+      background-color:rgba(32,30,92,0.5) !important;
+      @extend .text-gold;
+    }
   }
 }
 
+.bg-tools {
+  background-color: palette(base,"lav-blue");
+}
 .tools {
   margin-bottom:0;
+  color: palette(brand,"blue");
+  justify-content: space-evenly;
 }
 .tool-container {
   text-align: center;
+  background-color:palette(base,"alice-blue");
+  border-radius: 20px;
+  display:inline-block;
+}
+.tool-container img {
+  width: 200px;
 }
 .rainbow {
   background: linear-gradient(to right,
-          palette(skule,"red") 0%,
-          palette(skule,"orange") 20%,
-          palette(skule,"gold") 40%,
-          palette(skule,"green") 60%,
-          palette(skule,"blue") 80%,
-          palette(skule,"purple") 100%
+          palette(rainbow,"red") 10%,
+          palette(rainbow,"orange") 26%,
+          palette(rainbow,"yellow") 42%,
+          palette(rainbow,"green") 58%,
+          palette(rainbow,"blue") 74%,
+          palette(rainbow,"purple") 90%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight:bold;
+  &:hover {
+    filter: brightness(200%);
+  }
 }

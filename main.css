@@ -9928,7 +9928,7 @@ h3 {
   background-color: #201e5c !important;
 }
 
-.text-blue, .btn, span.contact-text a i, .bg-gold span:not([class^=text-]), .btn span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .btn p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
+.text-blue, .btn-2, span.contact-text a i, .bg-gold span:not([class^=text-]), .btn-2 span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .btn-2 p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c !important;
 }
 
@@ -9936,11 +9936,11 @@ h3 {
   border-color: #201e5c !important;
 }
 
-.bg-gold, .btn {
+.bg-gold, .btn-2 {
   background-color: #f7d116 !important;
 }
 
-.text-gold, .btn:hover, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
+.text-gold, .btn-2:hover, .btn-1, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
   color: #f7d116 !important;
 }
 
@@ -9949,51 +9949,51 @@ h3 {
 }
 
 .bg-l-blue {
-  background-color: #a2a0de !important;
+  background-color: #A5A3E1 !important;
 }
 
-.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn a:not([class]), .bg-gold a:not([class^=text-]), .btn a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
-  color: #a2a0de !important;
+.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn-2 a:not([class]), .bg-gold a:not([class^=text-]), .btn-2 a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
+  color: #A5A3E1 !important;
 }
 
 .border-l-blue {
-  border-color: #a2a0de !important;
+  border-color: #A5A3E1 !important;
 }
 
 .bg-l-gold {
-  background-color: #f7edba !important;
+  background-color: #FDF3C4 !important;
 }
 
 .text-l-gold, .bg-l-blue a:not([class]), .bg-blue a:not([class]), .bg-blue a:not([class^=text-]), .bg-l-blue a:not([class^=text-]) {
-  color: #f7edba !important;
+  color: #FDF3C4 !important;
 }
 
 .border-l-gold {
-  border-color: #f7edba !important;
+  border-color: #FDF3C4 !important;
 }
 
 .bg-d-blue {
-  background-color: #090829 !important;
+  background-color: #100F2E !important;
 }
 
 .text-d-blue {
-  color: #090829 !important;
+  color: #100F2E !important;
 }
 
 .border-d-blue {
-  border-color: #090829 !important;
+  border-color: #100F2E !important;
 }
 
 .bg-d-gold {
-  background-color: #3f3c2f !important;
+  background-color: #625104 !important;
 }
 
 .text-d-gold {
-  color: #3f3c2f !important;
+  color: #625104 !important;
 }
 
 .border-d-gold {
-  border-color: #3f3c2f !important;
+  border-color: #625104 !important;
 }
 
 .border-top-dashed {
@@ -10200,11 +10200,11 @@ html, body {
 }
 
 .nav-link {
-  color: #a2a0de !important;
+  color: #A5A3E1 !important;
   transition: color 0.5s ease-in-out;
 }
 .nav-link:hover {
-  color: #f7edba !important;
+  color: #FDF3C4 !important;
 }
 .active > .nav-link {
   color: #f7d116 !important;
@@ -10399,7 +10399,6 @@ ul {
 .btn {
   display: block;
   -webkit-appearance: none;
-  border: 2px solid #f7d116;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: large;
@@ -10410,24 +10409,51 @@ ul {
     margin: 0.5em 0 !important;
   }
 }
-.btn:hover {
+.btn-1 {
+  border: 2px dashed #f7d116;
+  background-color: rgba(32, 30, 92, 0.5) !important;
+}
+.btn-1:hover {
+  border: 2px solid #f7d116;
+  color: #201e5c !important;
+  background-color: #f7d116 !important;
+}
+.btn-2 {
+  border: 2px solid #f7d116;
+}
+.btn-2:hover {
   border: 2px dashed #f7d116;
   background-color: rgba(32, 30, 92, 0.5) !important;
 }
 
+.bg-tools {
+  background-color: #C3BEF7;
+}
+
 .tools {
   margin-bottom: 0;
+  color: #201e5c;
+  justify-content: space-evenly;
 }
 
 .tool-container {
   text-align: center;
+  background-color: #E5ECF4;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.tool-container img {
+  width: 200px;
 }
 
 .rainbow {
-  background: linear-gradient(to right, #ff8e8e 0%, #ffcf8e 20%, #ffec8e 40%, #68ba98 60%, #59a1c6 80%, #8372bb 100%);
+  background: linear-gradient(to right, #f72116 10%, #f78f16 26%, #f7d316 42%, #589c2b 58%, #4646a2 74%, #6c1a86 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+}
+.rainbow:hover {
+  filter: brightness(200%);
 }
 
 /*# sourceMappingURL=main.css.map */
