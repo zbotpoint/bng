@@ -40,7 +40,21 @@ function highlightNavigation() {
         // get the position of the section
         var sectionTop = currentSection.offset().top;
         // if the user has scrolled over the top of the section
-        if (scrollPosition >= sectionTop-56) { // hehe funny magic number
+        /*if (scrollPosition + $(window).height() > $(document).height() - 200) {
+            var id =  $($sections.first()).attr('id');
+            // get the corresponding navigation link
+            var $navigationLink = sectionIdTonavigationLink[id];
+            // if the link is not active
+            if (!$navigationLink.parent().hasClass('active')) {
+                // remove .active class from all the links
+                $navigationLinks.parents().removeClass('active');
+                // add .active class to the current link
+                $navigationLink.parent().addClass('active');
+            }
+            // we have found our section, so we return false to exit the each loop
+            return false;
+        }
+        else */if (scrollPosition >= sectionTop-200) { // hehe funny magic number
             // get the section id
             var id = currentSection.attr('id');
             // get the corresponding navigation link
