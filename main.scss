@@ -243,6 +243,11 @@ body > section {
   margin-top: 3.5rem !important;
 }
 
+@include media-breakpoint-down(sm) {
+  .nav-logo {
+    border-right: 0 !important;
+  }
+}
 .nav-border {
   display:none;
   margin: 0 -15px;
@@ -383,5 +388,14 @@ ul {
   -webkit-text-fill-color: transparent;
   &:hover {
     filter: brightness(200%);
+  }
+  @include media-breakpoint-down(sm) {
+    background:none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: palette(brand,"l-blue");
+    &:hover {
+      color: palette(brand,"l-gold");
+    }
   }
 }

@@ -10323,6 +10323,11 @@ body > section:first-of-type {
   margin-top: 3.5rem !important;
 }
 
+@media (max-width: 767.98px) {
+  .nav-logo {
+    border-right: 0 !important;
+  }
+}
 .nav-border {
   display: none;
   margin: 0 -15px;
@@ -10454,6 +10459,17 @@ ul {
 }
 .rainbow:hover {
   filter: brightness(200%);
+}
+@media (max-width: 767.98px) {
+  .rainbow {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: #A5A3E1;
+  }
+  .rainbow:hover {
+    color: #FDF3C4;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

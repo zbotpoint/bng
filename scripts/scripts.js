@@ -30,11 +30,26 @@ function throttle(fn, interval) {
     };
 }
 
+function getViewport () {
+    const width = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+    )
+    if (width <= 576) return 'xs'
+    if (width <= 768) return 'sm'
+    if (width <= 992) return 'md'
+    if (width <= 1200) return 'lg'
+    return 'xl'
+}
+
 function highlightNavigation() {
     // get the current vertical position of the scroll bar
     var scrollPosition = $(window).scrollTop();
-
+    var scrn_size = getViewport();
     // iterate the sections
+    if (scrn_size === 'xs' || scrn_size === 'sm' || scrn_size === 'md') {
+        return;
+    }
     $sections.each(function() {
         var currentSection = $(this);
         // get the position of the section
