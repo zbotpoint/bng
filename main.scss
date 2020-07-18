@@ -330,6 +330,7 @@ ul {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size:large;
+  min-width: 6em;
   @include media-breakpoint-down(sm) {
     width:100%;
     margin:0.5em 0 !important;
@@ -354,7 +355,6 @@ ul {
     border: 2px solid palette(brand,"gold");
     @extend .text-blue;
     @extend .bg-gold;
-    width: 6em;
 
     &:hover {
       border: 2px dashed palette(brand,"gold");

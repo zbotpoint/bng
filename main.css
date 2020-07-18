@@ -10407,6 +10407,7 @@ ul {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: large;
+  min-width: 6em;
 }
 @media (max-width: 767.98px) {
   .btn {
@@ -10430,7 +10431,6 @@ ul {
 }
 .btn-2 {
   border: 2px solid #f7d116;
-  width: 6em;
 }
 .btn-2:hover {
   border: 2px dashed #f7d116;

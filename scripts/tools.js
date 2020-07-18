@@ -7,15 +7,14 @@ $(document).ready(function () {
             var elem = $(event.target).is("button") ? $(event.target) : $(event.target).parent();
             var tool = elem.parent().children('p').text();
             if (elem.hasClass('disabled')) {
-                elem.removeClass('disabled').children("span").text("Book");
+                elem.removeClass('disabled').children("span").text("Book").blur();
                 tools.delete(tool);
                 if (tools.size === 0) {
                     $('#submitter').addClass('disabled').prop('disabled',true);
                 }
             }
             else {
-                debugger;
-                elem.addClass('disabled').children("span").text("Booked!");
+                elem.addClass('disabled').children("span").text("Booked!").blur();
                 tools.add(tool);
                 $('#submitter').removeClass('disabled').prop('disabled',false);
             }
