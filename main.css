@@ -10423,12 +10423,38 @@ ul {
   color: #201e5c !important;
   background-color: #f7d116 !important;
 }
+.btn-1.disabled {
+  background-color: #444 !important;
+  border: 2px solid #444 !important;
+  color: #888 !important;
+}
 .btn-2 {
   border: 2px solid #f7d116;
+  width: 6em;
 }
 .btn-2:hover {
   border: 2px dashed #f7d116;
   background-color: rgba(32, 30, 92, 0.5) !important;
+}
+.btn-2.disabled {
+  background-color: #444 !important;
+  border: 2px solid #444 !important;
+}
+.btn-2.disabled span {
+  color: #888 !important;
+  cursor: pointer !important;
+}
+.btn-2.disabled:hover {
+  border: 2px dashed #f72116 !important;
+  background-color: #ff8e8e !important;
+  color: #f72116 !important;
+}
+.btn-2.disabled:hover::before {
+  content: "Remove?";
+  cursor: pointer !important;
+}
+.btn-2.disabled:hover span {
+  display: none;
 }
 
 .bg-tools {

@@ -344,16 +344,43 @@ ul {
       color: palette(brand,"blue") !important;
       background-color: palette(brand,"gold") !important;
     }
+    &.disabled {
+      background-color: palette(base,"grey-2") !important;
+      border: 2px solid palette(base,"grey-2") !important;
+      color: palette(base,"grey-3") !important;
+    }
   }
   &-2 {
     border: 2px solid palette(brand,"gold");
     @extend .text-blue;
     @extend .bg-gold;
+    width: 6em;
 
     &:hover {
       border: 2px dashed palette(brand,"gold");
       background-color:rgba(32,30,92,0.5) !important;
       @extend .text-gold;
+    }
+    &.disabled {
+      background-color: palette(base,"grey-2") !important;
+      border: 2px solid palette(base,"grey-2") !important;
+
+      & span {
+        color: palette(base,"grey-3") !important;
+        cursor:pointer !important;
+      }
+      &:hover {
+        border: 2px dashed palette(rainbow,"red") !important;
+        background-color: palette(skule,"red") !important;
+        color: palette(rainbow,"red") !important;
+        &::before {
+          content: "Remove?";
+          cursor:pointer !important;
+        }
+        & span {
+          display: none;
+        }
+      }
     }
   }
 }
