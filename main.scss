@@ -172,6 +172,10 @@ h3 {
     object-fit: cover;
   }
 }
+.bg-tools {
+  background-image: url("img-tools.png");
+  background-repeat: repeat-y;
+}
 
 .logo {
   height: 30vh;
@@ -326,7 +330,7 @@ ul {
 .btn {
   display: block;
   -webkit-appearance: none;
-  @extend .m-4;
+
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size:large;
@@ -356,7 +360,7 @@ ul {
     @extend .text-blue;
     @extend .bg-gold;
 
-    &:hover {
+    &:not(:focus):hover {
       border: 2px dashed palette(brand,"gold");
       background-color:rgba(32,30,92,0.5) !important;
       @extend .text-gold;
@@ -385,9 +389,7 @@ ul {
   }
 }
 
-.bg-tools {
-  background-color: palette(base,"lav-blue");
-}
+
 .tools {
   margin-bottom:0;
   color: palette(brand,"blue");
@@ -395,7 +397,7 @@ ul {
 }
 .tool-container {
   text-align: center;
-  background-color:palette(base,"alice-blue");
+  background-color:palette(base,"white");
   border-radius: 20px;
   display:inline-block;
 }
@@ -428,4 +430,29 @@ ul {
 }
 a.button {
   text-decoration: none !important;
+}
+input.booking {
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  border: 2px solid palette(brand,"gold");
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Lato", sans-serif;
+  background-color:rgba(32,30,92,0.5);
+  color: palette(brand,"gold");
+  transition: all 0.15s ease-in-out;
+
+  &.disabled{
+    opacity: 0.65;
+    background-color: palette(base,"grey-2");
+    color: palette(base,"grey-3");
+    border-color: palette(base,"grey-2");
+    &::placeholder {
+      color:palette(base,"grey-3");
+    }
+  }
+  &::placeholder {
+    color:palette(brand,"gold");
+  }
 }

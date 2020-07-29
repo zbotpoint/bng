@@ -10,13 +10,13 @@ $(document).ready(function () {
                 elem.removeClass('disabled').children("span").text("Book").focusout();
                 tools.delete(tool);
                 if (tools.size === 0) {
-                    $('#submitter').addClass('disabled').prop('disabled',true);
+                    $('.booking').addClass('disabled').prop('disabled',true);
                 }
             }
             else {
                 elem.addClass('disabled').children("span").text("Booked!").focusout();
                 tools.add(tool);
-                $('#submitter').removeClass('disabled').prop('disabled',false);
+                $('.booking').removeClass('disabled').prop('disabled',false);
             }
         })
     })

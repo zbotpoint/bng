@@ -7516,7 +7516,7 @@ span.contact-text a {
   margin-left: 1rem !important;
 }
 
-.m-4, .btn {
+.m-4 {
   margin: 1.5rem !important;
 }
 
@@ -9940,7 +9940,7 @@ h3 {
   background-color: #f7d116 !important;
 }
 
-.text-gold, .btn-2:hover, .btn-1, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
+.text-gold, .btn-2:not(:focus):hover, .btn-1, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
   color: #f7d116 !important;
 }
 
@@ -10251,6 +10251,11 @@ h3 {
   }
 }
 
+.bg-tools {
+  background-image: url("img-tools.png");
+  background-repeat: repeat-y;
+}
+
 .logo {
   height: 30vh;
 }
@@ -10432,7 +10437,7 @@ ul {
 .btn-2 {
   border: 2px solid #f7d116;
 }
-.btn-2:hover {
+.btn-2:not(:focus):hover {
   border: 2px dashed #f7d116;
   background-color: rgba(32, 30, 92, 0.5) !important;
 }
@@ -10457,10 +10462,6 @@ ul {
   display: none;
 }
 
-.bg-tools {
-  background-color: #C3BEF7;
-}
-
 .tools {
   margin-bottom: 0;
   color: #201e5c;
@@ -10469,7 +10470,7 @@ ul {
 
 .tool-container {
   text-align: center;
-  background-color: #E5ECF4;
+  background-color: #fff;
   border-radius: 20px;
   display: inline-block;
 }
@@ -10500,6 +10501,31 @@ ul {
 
 a.button {
   text-decoration: none !important;
+}
+
+input.booking {
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  border: 2px solid #f7d116;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Lato", sans-serif;
+  background-color: rgba(32, 30, 92, 0.5);
+  color: #f7d116;
+  transition: all 0.15s ease-in-out;
+}
+input.booking.disabled {
+  opacity: 0.65;
+  background-color: #444;
+  color: #888;
+  border-color: #444;
+}
+input.booking.disabled::placeholder {
+  color: #888;
+}
+input.booking::placeholder {
+  color: #f7d116;
 }
 
 /*# sourceMappingURL=main.css.map */
