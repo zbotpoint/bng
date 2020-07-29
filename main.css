@@ -126,7 +126,7 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-b, .faq-body a,
+b, .faq-body a, .faq-body-dusted a,
 strong {
   font-weight: bolder;
 }
@@ -9942,7 +9942,7 @@ h3 {
   background-color: #f7d116 !important;
 }
 
-.text-gold, .btn-2:not(:focus):hover, .btn-1, .faq-body a, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
+.text-gold, .btn-2:not(:focus):hover, .btn-1, .faq-body a .faq-body, .faq-body-dusted a .faq-body, .bg-blue span:not([class^=text-]), .bg-l-blue span:not([class^=text-]), .bg-blue p:not([class^=text-]), .bg-l-blue p:not([class^=text-]) {
   color: #f7d116 !important;
 }
 
@@ -9954,7 +9954,7 @@ h3 {
   background-color: #A5A3E1 !important;
 }
 
-.text-l-blue, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn-2 a:not([class]), .bg-gold a:not([class^=text-]), .btn-2 a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
+.text-l-blue, .faq-body a .faq-body-dusted, .faq-body-dusted a .faq-body-dusted, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn-2 a:not([class]), .bg-gold a:not([class^=text-]), .btn-2 a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
   color: #A5A3E1 !important;
 }
 
@@ -10422,8 +10422,13 @@ span.contact-text a {
   z-index: 1;
 }
 
-.faq-body div {
+.faq-body div, .faq-body-dusted div {
   margin-bottom: 1em;
+}
+@media (max-width: 767.98px) {
+  .faq-body a, .faq-body-dusted a {
+    text-decoration: none;
+  }
 }
 
 ul {

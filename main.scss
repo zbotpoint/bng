@@ -311,13 +311,23 @@ span.contact-text a {
     z-index: 1;
   }
 }
-.faq-body {
+.faq-body,.faq-body-dusted {
   & a {
     @extend b;
-    @extend .text-gold;
+    .faq-body {
+      @extend .text-gold;
+    }
+    .faq-body-dusted {
+      @extend .text-l-blue;
+    }
   }
   & div {
     margin-bottom: 1em
+  }
+  @include media-breakpoint-down(sm) {
+    & a {
+      text-decoration: none;
+    }
   }
 }
 .faq-hidden {
