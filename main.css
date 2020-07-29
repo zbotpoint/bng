@@ -8368,7 +8368,8 @@ span.contact-text a {
   }
 
   .mr-md-3,
-.mx-md-3 {
+.mx-md-3,
+ul.index-buttons .btn {
     margin-right: 1rem !important;
   }
 
@@ -8378,7 +8379,8 @@ span.contact-text a {
   }
 
   .ml-md-3,
-.mx-md-3 {
+.mx-md-3,
+ul.index-buttons .btn {
     margin-left: 1rem !important;
   }
 

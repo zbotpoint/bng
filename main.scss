@@ -327,6 +327,9 @@ ul {
   list-style: none;
   padding:0;
 }
+ul.index-buttons .btn {
+  @extend .mx-md-3;
+}
 .btn {
   display: block;
   -webkit-appearance: none;
