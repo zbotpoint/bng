@@ -9974,6 +9974,30 @@ h3 {
   border-color: #FDF3C4 !important;
 }
 
+.bg-m-blue {
+  background-color: #4B4799 !important;
+}
+
+.text-m-blue {
+  color: #4B4799 !important;
+}
+
+.border-m-blue {
+  border-color: #4B4799 !important;
+}
+
+.bg-m-gold {
+  background-color: #FAE475 !important;
+}
+
+.text-m-gold {
+  color: #FAE475 !important;
+}
+
+.border-m-gold {
+  border-color: #FAE475 !important;
+}
+
 .bg-d-blue {
   background-color: #100F2E !important;
 }
@@ -10293,7 +10317,6 @@ body > section:first-of-type {
 }
 
 .section-body {
-  height: 46.5rem;
   overflow: hidden;
   position: relative;
 }
@@ -10344,7 +10367,7 @@ body > section:first-of-type {
   padding-top: 3.69em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-border {
     display: block;
   }
@@ -10482,23 +10505,20 @@ ul {
 }
 
 .rainbow {
-  background: linear-gradient(to right, #f72116 10%, #f78f16 26%, #f7d316 42%, #589c2b 58%, #4646a2 74%, #6c1a86 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #A5A3E1;
 }
-.rainbow:hover {
-  filter: brightness(200%);
-}
-@media (max-width: 767.98px) {
+@media (min-width: 992px) {
   .rainbow {
-    background: none;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    color: #A5A3E1;
+    background: linear-gradient(to right, #f72116 10%, #f78f16 26%, #f7d316 42%, #589c2b 58%, #4646a2 74%, #6c1a86 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .rainbow:hover {
-    color: #FDF3C4;
+    filter: brightness(200%);
   }
+}
+.rainbow:hover {
+  color: #FDF3C4;
 }
 
 a.button {

@@ -112,10 +112,10 @@ $(window).scroll( throttle(highlightNavigation,100) );
 $(document).ready(highlightNavigation());
 
 $(document).ready(function () {
-    document.querySelectorAll('.faq-body p').forEach( item => {
+    document.querySelectorAll('.faq-body p,.faq-body-dusted p').forEach( item => {
         $(item).addClass("faq-hidden");
     })
-    document.querySelectorAll('.faq-body a').forEach(item => {
+    document.querySelectorAll('.faq-body a,.faq-body-dusted a').forEach(item => {
         item.addEventListener('click', event => {
             var p = $(event.target).next().next();
             if (p.hasClass("faq-hidden")) {
