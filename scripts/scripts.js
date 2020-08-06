@@ -114,7 +114,6 @@ $(document).ready(highlightNavigation());
 $(document).ready(function () {
     document.querySelectorAll('.faq-body p,.faq-body-dusted p').forEach( item => {
         let a = $(item).addClass("faq-hidden").prev().prev();
-        debugger;
         a.text("+ "+ a.text());
     })
     document.querySelectorAll('.faq-body a,.faq-body-dusted a').forEach(item => {
