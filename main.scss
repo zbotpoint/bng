@@ -118,7 +118,7 @@ $section-height: 50rem;
 html, body {
   margin:0;
   padding:0;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 .nav-link {
@@ -422,11 +422,11 @@ ul.index-buttons .btn {
   @include media-breakpoint-up(lg) {
     background: linear-gradient(to right,
             palette(rainbow, "red") 10%,
-            palette(rainbow, "orange") 26%,
-            palette(rainbow, "yellow") 42%,
-            palette(rainbow, "green") 58%,
-            palette(rainbow, "blue") 74%,
-            palette(rainbow, "purple") 90%
+            palette(skule, "orange") 26%,
+            palette(skule, "yellow") 42%,
+            palette(skule, "green") 58%,
+            palette(skule, "blue") 74%,
+            palette(skule, "purple") 90%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -467,3 +467,71 @@ input.booking {
     color:palette(brand,"gold");
   }
 }
+
+// form on dusted page starts
+
+.dusted .form {
+  & input {
+    background: palette(brand,"d-blue");
+    padding: 0.375rem 0.75rem;
+    border: 2px palette(brand,"l-blue") dashed;
+    border-radius: 0.25rem;
+    font-size: large;
+    font-weight: bold;
+    @extend .text-l-blue;
+    transition: all 0.5s ease-in-out;
+    display:inline-block;
+    vertical-align: middle;
+
+    &::placeholder {
+      @extend .text-m-blue;
+      transition: all 0.25s ease-in-out;
+    }
+    &:focus {
+      box-shadow: 0 0 6px palette(brand,"l-blue");
+      border: 2px palette(brand,"l-blue") solid;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+    &:not(:placeholder-shown) {
+      @extend .text-d-blue;
+      background: palette(brand,"m-blue");
+      border: 2px palette(brand,"m-blue") solid;
+    }
+  }
+  & .btn {
+    display:inline-block;
+    vertical-align: middle;
+    &-1 {
+      @extend .text-blue;
+      border: 2px dashed palette(brand,"l-blue");
+      background-color: palette(brand,"m-blue") !important;
+      color: palette(brand,"l-blue") !important;
+
+      &:hover {
+        border: 2px solid palette(base,"white");
+        color: palette(base,"white") !important;
+        background-color: palette(brand,"l-blue") !important;
+      }
+      &.disabled {
+        background-color: palette(base,"grey-2") !important;
+        border: 2px solid palette(base,"grey-2") !important;
+        color: palette(base,"grey-3") !important;
+      }
+    }
+  }
+}
+
+.dusted .container-fluid.dusted-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-down(lg) {
+    align-items: flex-start;
+  }
+}
+
+// form on dusted page ends

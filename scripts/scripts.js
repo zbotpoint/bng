@@ -113,19 +113,35 @@ $(document).ready(highlightNavigation());
 
 $(document).ready(function () {
     document.querySelectorAll('.faq-body p,.faq-body-dusted p').forEach( item => {
-        $(item).addClass("faq-hidden");
+        let a = $(item).addClass("faq-hidden").prev().prev();
+        debugger;
+        a.text("+ "+ a.text());
     })
     document.querySelectorAll('.faq-body a,.faq-body-dusted a').forEach(item => {
         item.addEventListener('click', event => {
+            let a = $(event.target);
             var p = $(event.target).next().next();
             if (p.hasClass("faq-hidden")) {
+                a.text("−"+a.text().slice(1));
                 p.removeClass("faq-hidden");
             }
             else {
+                a.text("+"+a.text().slice(1));
                 p.addClass("faq-hidden");
             }
             event.preventDefault();
         })
+    })
+    document.getElementsByClassName("field")[0].addEventListener("keyup",function () {
+        if ($(this).val() == '') {
+            $(".dusted .btn").addClass("disabled").prop("disabled",true);
+        }
+        else {
+            $(".dusted .btn").removeClass("disabled").prop("disabled",false);
+        }
+    })
+    document.getElementById("submitter").addEventListener('click', event => {
+        $("#submit-url").prop('href',"https://docs.google.com/forms/d/e/1FAIpQLScGlUSBhFhqPzr5SYx-1LqE5H4bGlAKYJibGwL3crZHtINCjQ/viewform?usp=pp_url&entry.2007659015="+encodeURIComponent($(".field").val()))[0].click();
     })
 });
 

@@ -9930,7 +9930,7 @@ h3 {
   background-color: #201e5c !important;
 }
 
-.text-blue, .btn-2, span.contact-text a i, .bg-gold span:not([class^=text-]), .btn-2 span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .btn-2 p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
+.text-blue, .dusted .form .btn-1, .btn-2, span.contact-text a i, .bg-gold span:not([class^=text-]), .btn-2 span:not([class^=text-]), .bg-l-gold span:not([class^=text-]), .bg-gold p:not([class^=text-]), .btn-2 p:not([class^=text-]), .bg-l-gold p:not([class^=text-]) {
   color: #201e5c !important;
 }
 
@@ -9954,7 +9954,7 @@ h3 {
   background-color: #A5A3E1 !important;
 }
 
-.text-l-blue, .faq-body a .faq-body-dusted, .faq-body-dusted a .faq-body-dusted, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn-2 a:not([class]), .bg-gold a:not([class^=text-]), .btn-2 a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
+.text-l-blue, .dusted .form input, .faq-body a .faq-body-dusted, .faq-body-dusted a .faq-body-dusted, .bg-l-gold a:not([class]), .bg-gold a:not([class]), .btn-2 a:not([class]), .bg-gold a:not([class^=text-]), .btn-2 a:not([class^=text-]), .bg-l-gold a:not([class^=text-]) {
   color: #A5A3E1 !important;
 }
 
@@ -9978,7 +9978,7 @@ h3 {
   background-color: #4B4799 !important;
 }
 
-.text-m-blue {
+.text-m-blue, .dusted .form input::placeholder {
   color: #4B4799 !important;
 }
 
@@ -10002,7 +10002,7 @@ h3 {
   background-color: #100F2E !important;
 }
 
-.text-d-blue {
+.text-d-blue, .dusted .form input:not(:placeholder-shown) {
   color: #100F2E !important;
 }
 
@@ -10514,7 +10514,7 @@ ul {
 }
 @media (min-width: 992px) {
   .rainbow {
-    background: linear-gradient(to right, #f72116 10%, #f78f16 26%, #f7d316 42%, #589c2b 58%, #4646a2 74%, #6c1a86 90%);
+    background: linear-gradient(to right, #f72116 10%, #ffcf8e 26%, 42%, #68ba98 58%, #59a1c6 74%, #8372bb 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -10553,6 +10553,63 @@ input.booking.disabled::placeholder {
 }
 input.booking::placeholder {
   color: #f7d116;
+}
+
+.dusted .form input {
+  background: #100F2E;
+  padding: 0.375rem 0.75rem;
+  border: 2px #A5A3E1 dashed;
+  border-radius: 0.25rem;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dusted .form input::placeholder {
+  transition: all 0.25s ease-in-out;
+}
+.dusted .form input:focus {
+  box-shadow: 0 0 6px #A5A3E1;
+  border: 2px #A5A3E1 solid;
+}
+.dusted .form input:focus::placeholder {
+  opacity: 0;
+}
+.dusted .form input:not(:placeholder-shown) {
+  background: #4B4799;
+  border: 2px #4B4799 solid;
+}
+.dusted .form .btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dusted .form .btn-1 {
+  border: 2px dashed #A5A3E1;
+  background-color: #4B4799 !important;
+  color: #A5A3E1 !important;
+}
+.dusted .form .btn-1:hover {
+  border: 2px solid #fff;
+  color: #fff !important;
+  background-color: #A5A3E1 !important;
+}
+.dusted .form .btn-1.disabled {
+  background-color: #444 !important;
+  border: 2px solid #444 !important;
+  color: #888 !important;
+}
+
+.dusted .container-fluid.dusted-form, .dusted .dusted-form.container-sm, .dusted .dusted-form.container-md, .dusted .dusted-form.container-lg, .dusted .dusted-form.container-xl, .dusted .dusted-form.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  .dusted .container-fluid.dusted-form, .dusted .dusted-form.container-sm, .dusted .dusted-form.container-md, .dusted .dusted-form.container-lg, .dusted .dusted-form.container-xl, .dusted .dusted-form.title-container {
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
