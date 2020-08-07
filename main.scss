@@ -535,3 +535,114 @@ input.booking {
 }
 
 // form on dusted page ends
+.pride-wrapper {
+  top:0;
+  left:0;
+  height: 93vh;
+}
+.bg-pride {
+  transition: all 2s ease-in-out;
+  height:100vh;
+  z-index: -1;
+  &-full {
+    background:
+      linear-gradient(
+          palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+          palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+          palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+          palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
+          palette(rainbow,"blue") 800px, palette(rainbow,"blue") 1000px,
+          palette(rainbow,"purple") 1000px, palette(rainbow,"purple")
+      );
+  }
+  top:100%;
+  overflow:hidden;
+  position:relative;
+  &-0 {
+    background:palette(rainbow,"red");
+    top:0 !important;
+  }
+  &-1 {
+    background:palette(rainbow,"orange");
+  }
+  &-2 {
+    background:palette(rainbow,"yellow");
+  }
+  &-3 {
+    background: palette(rainbow,"green");
+  }
+  &-4 {
+    background:palette(rainbow,"blue");
+  }
+  &-5 {
+    background:palette(rainbow,"purple");
+  }
+}
+
+.slide-in {
+  top:120px;
+}
+
+.pride {
+  & .title-container {
+    margin-top: 15vh;
+  }
+}
+
+/*
+.bg-pride {
+  height: 300vh;
+  transition: all 1s ease-in-out;
+  &-0 {
+    background:
+      linear-gradient(
+        palette(rainbow,"red") 0px, palette(rainbow,"red")
+      );
+  }
+  &-1 {
+    background:
+      linear-gradient(
+        palette(rainbow,"red") 0px, palette(rainbow,"red") 100px,
+        palette(rainbow,"orange") 200px, palette(rainbow,"orange")
+      );
+  }
+  &-2 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow")
+    );
+  }
+  &-3 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green")
+    );
+  }
+  &-4 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
+    palette(rainbow,"blue") 800px, palette(rainbow,"blue")
+    );
+  }
+  &-5 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
+    palette(rainbow,"blue") 800px, palette(rainbow,"blue") 1000px,
+    palette(rainbow,"purple") 1000px, palette(rainbow,"purple")
+    );
+  }
+}
+*/

@@ -10612,4 +10612,107 @@ input.booking::placeholder {
   }
 }
 
+.pride-wrapper {
+  top: 0;
+  left: 0;
+  height: 93vh;
+}
+
+.bg-pride {
+  transition: all 2s ease-in-out;
+  height: 100vh;
+  z-index: -1;
+  top: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bg-pride-full {
+  background: linear-gradient(#f72116 0px, #f72116 200px, #f78f16 200px, #f78f16 400px, #f7d316 400px, #f7d316 600px, #589c2b 600px, #589c2b 800px, #4646a2 800px, #4646a2 1000px, #6c1a86 1000px, #6c1a86);
+}
+.bg-pride-0 {
+  background: #f72116;
+  top: 0 !important;
+}
+.bg-pride-1 {
+  background: #f78f16;
+}
+.bg-pride-2 {
+  background: #f7d316;
+}
+.bg-pride-3 {
+  background: #589c2b;
+}
+.bg-pride-4 {
+  background: #4646a2;
+}
+.bg-pride-5 {
+  background: #6c1a86;
+}
+
+.slide-in {
+  top: 120px;
+}
+
+.pride .title-container {
+  margin-top: 15vh;
+}
+
+/*
+.bg-pride {
+  height: 300vh;
+  transition: all 1s ease-in-out;
+  &-0 {
+    background:
+      linear-gradient(
+        palette(rainbow,"red") 0px, palette(rainbow,"red")
+      );
+  }
+  &-1 {
+    background:
+      linear-gradient(
+        palette(rainbow,"red") 0px, palette(rainbow,"red") 100px,
+        palette(rainbow,"orange") 200px, palette(rainbow,"orange")
+      );
+  }
+  &-2 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow")
+    );
+  }
+  &-3 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green")
+    );
+  }
+  &-4 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
+    palette(rainbow,"blue") 800px, palette(rainbow,"blue")
+    );
+  }
+  &-5 {
+    background:
+    linear-gradient(
+    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
+    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
+    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
+    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
+    palette(rainbow,"blue") 800px, palette(rainbow,"blue") 1000px,
+    palette(rainbow,"purple") 1000px, palette(rainbow,"purple")
+    );
+  }
+}
+*/
+
 /*# sourceMappingURL=main.css.map */
