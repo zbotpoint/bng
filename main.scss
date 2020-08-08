@@ -415,14 +415,14 @@ li a {
     }
   }
   &-3 {
-    border: 2px solid white;
-    color: black;
-    @extend .bg-white;
-    mix-blend-mode: screen;
+    border: 2px dashed white;
+    color: white;
+
     &:hover {
-      border: 2px dashed white;
-      color: white !important;
-      background-color: transparent !important;
+      border: 2px solid white;
+      color: black;
+      background-color: white;
+      mix-blend-mode: screen;
     }
     &.disabled {
       background-color: palette(base,"grey-2") !important;
@@ -568,20 +568,21 @@ input.booking {
   top:0;
   left:0;
   height: 93vh;
+  transition: all 1.5s ease-out;
 }
 .bg-pride {
-  transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-out;
   height:150vh;
   z-index: -1;
   &-full {
     background:
       linear-gradient(
-          palette(rainbow,"red") 0px, palette(rainbow,"red") 120px,
-          palette(rainbow,"orange") 120px, palette(rainbow,"orange") 240px,
-          palette(rainbow,"yellow") 240px, palette(rainbow,"yellow") 360px,
-          palette(rainbow,"green") 360px, palette(rainbow,"green") 480px,
-          palette(rainbow,"blue") 480px, palette(rainbow,"blue") 600px,
-          palette(rainbow,"purple") 600px, palette(rainbow,"purple")
+          palette(rainbow,"red") 3.5em, palette(rainbow,"red") 11em,
+          palette(rainbow,"orange") 11em, palette(rainbow,"orange") 18.5em,
+          palette(rainbow,"yellow") 18.5em, palette(rainbow,"yellow") 26em,
+          palette(rainbow,"green") 26em, palette(rainbow,"green") 33.5em,
+          palette(rainbow,"blue") 33.5em, palette(rainbow,"blue") 41em,
+          palette(rainbow,"purple") 41em, palette(rainbow,"purple")
       );
   }
   top:100%;
@@ -620,7 +621,7 @@ input.booking {
 
   & .section-start {
     @include media-breakpoint-only(xl) {
-      margin-top: 230px
+      margin-top: 210px
     }
     @include media-breakpoint-down(lg) {
       margin-top: 180px;
@@ -643,4 +644,54 @@ input.booking {
 
 .init-hidden {
   transition: opacity 1s ease-in-out;
+}
+
+.gallery {
+  display:flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding:0;
+
+  & li {
+    height: 40vh;
+    flex-grow:1;
+    margin: 1em;
+    transition: height 0.5s ease-in-out;
+  }
+  &::after {
+    flex-grow: 10;
+  }
+}
+@media (max-aspect-ratio: 1/1) {
+  .gallery li {
+    height: 30vw;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 576px) {
+  .gallery {
+    flex-direction: row;
+  }
+
+  .gallery li {
+    height: auto;
+    width: 100%;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+.gallery img {
+  max-height: 100%;
+  min-width:100%;
+  object-fit:cover;
+  object-position: top;
+  vertical-align: bottom;
+}
+.gallery li:hover {
+  @include media-breakpoint-up(md) {
+    height: 43vh;
+  }
 }
