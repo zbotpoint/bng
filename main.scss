@@ -338,9 +338,22 @@ ul {
   list-style: none;
   padding:0;
 }
+ul li {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
 ul.index-buttons .btn {
   @extend .mx-md-3;
+  @extend .my-md-1;
 }
+
+li a {
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+}
+
 .btn {
   display: block;
   -webkit-appearance: none;
@@ -399,6 +412,22 @@ ul.index-buttons .btn {
           display: none;
         }
       }
+    }
+  }
+  &-3 {
+    border: 2px solid white;
+    color: black;
+    @extend .bg-white;
+    mix-blend-mode: screen;
+    &:hover {
+      border: 2px dashed white;
+      color: white !important;
+      background-color: transparent !important;
+    }
+    &.disabled {
+      background-color: palette(base,"grey-2") !important;
+      border: 2px solid palette(base,"grey-2") !important;
+      color: palette(base,"grey-3") !important;
     }
   }
 }
@@ -541,18 +570,18 @@ input.booking {
   height: 93vh;
 }
 .bg-pride {
-  transition: all 2s ease-in-out;
-  height:100vh;
+  transition: all 1.5s ease-in-out;
+  height:150vh;
   z-index: -1;
   &-full {
     background:
       linear-gradient(
-          palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
-          palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
-          palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
-          palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
-          palette(rainbow,"blue") 800px, palette(rainbow,"blue") 1000px,
-          palette(rainbow,"purple") 1000px, palette(rainbow,"purple")
+          palette(rainbow,"red") 0px, palette(rainbow,"red") 120px,
+          palette(rainbow,"orange") 120px, palette(rainbow,"orange") 240px,
+          palette(rainbow,"yellow") 240px, palette(rainbow,"yellow") 360px,
+          palette(rainbow,"green") 360px, palette(rainbow,"green") 480px,
+          palette(rainbow,"blue") 480px, palette(rainbow,"blue") 600px,
+          palette(rainbow,"purple") 600px, palette(rainbow,"purple")
       );
   }
   top:100%;
@@ -584,65 +613,34 @@ input.booking {
 }
 
 .pride {
+  background-color: palette(rainbow,"purple");
   & .title-container {
     margin-top: 15vh;
   }
+
+  & .section-start {
+    @include media-breakpoint-only(xl) {
+      margin-top: 230px
+    }
+    @include media-breakpoint-down(lg) {
+      margin-top: 180px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 3em;
+    }
+  }
+
+  & h3 {
+    @include media-breakpoint-down(lg) {
+      font-size: x-large;
+    }
+  }
 }
 
-/*
-.bg-pride {
-  height: 300vh;
-  transition: all 1s ease-in-out;
-  &-0 {
-    background:
-      linear-gradient(
-        palette(rainbow,"red") 0px, palette(rainbow,"red")
-      );
-  }
-  &-1 {
-    background:
-      linear-gradient(
-        palette(rainbow,"red") 0px, palette(rainbow,"red") 100px,
-        palette(rainbow,"orange") 200px, palette(rainbow,"orange")
-      );
-  }
-  &-2 {
-    background:
-    linear-gradient(
-    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
-    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
-    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow")
-    );
-  }
-  &-3 {
-    background:
-    linear-gradient(
-    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
-    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
-    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
-    palette(rainbow,"green") 600px, palette(rainbow,"green")
-    );
-  }
-  &-4 {
-    background:
-    linear-gradient(
-    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
-    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
-    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
-    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
-    palette(rainbow,"blue") 800px, palette(rainbow,"blue")
-    );
-  }
-  &-5 {
-    background:
-    linear-gradient(
-    palette(rainbow,"red") 0px, palette(rainbow,"red") 200px,
-    palette(rainbow,"orange") 200px, palette(rainbow,"orange") 400px,
-    palette(rainbow,"yellow") 400px, palette(rainbow,"yellow") 600px,
-    palette(rainbow,"green") 600px, palette(rainbow,"green") 800px,
-    palette(rainbow,"blue") 800px, palette(rainbow,"blue") 1000px,
-    palette(rainbow,"purple") 1000px, palette(rainbow,"purple")
-    );
-  }
+.opacity-0 {
+  opacity:0;
 }
-*/
+
+.init-hidden {
+  transition: opacity 1s ease-in-out;
+}
