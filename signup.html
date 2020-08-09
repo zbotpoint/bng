@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <script src="https://kit.fontawesome.com/4f39610f25.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="scripts/signup.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sign Up - Blue & Gold Committee</title>
+</head>
+<body class="pt-6 bg-blue">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-offblue border-bottom-dashed border-gold">
+    <a class="navbar-brand py-0" href="index.html">
+        <img src="BG.png" height="30" alt="B&G" class="nav-logo pr-2 mr-1 border-right border-gold"/>
+        <span class="align-middle text-gold d-none d-md-inline">The Blue & Gold Committee</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="index.html#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#FAQ">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tools.html">Tools</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link rainbow" href="pride.html">Pride</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dusted.html">DUSTED</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://godivaweek.skule.ca" target="_blank">Godiva Week</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="col-lg-12 text-center">
+        <div class="mt-5">
+            <img src="G-mono.png" class="d-inline-block logo mx-3">
+            <br class="d-block d-md-none">
+            <h1 class="text-gold mx-3 d-inline-block align-middle">Sign Up</h1>
+        </div>
+        <br class="d-none d-md-block">
+    </div>
+    <div class="col-lg-4 offset-lg-1 mt-md-5 mt-1 section-start init-hidden text-center">
+        <h2 class="text-gold">Mailing List</h2>
+        <form action="https://skule.us5.list-manage.com/subscribe/post-json?u=dc4e152d34bc3e84cf1fa96d4&id=a5fd1dbde3&c=?" method="get">
+            <div class="form--group mt-md-3 mt-5">
+                <input id="email" name="EMAIL" type="email" placeholder="&nbsp;" class="login-input form-field noselect" required>
+                <label class="form-label noselect" for="email">Email Address</label>
+            </div>
+            <div class="form--group mt-2">
+                <input id="firstname" name="FNAME" type="text" placeholder="&nbsp;" class="login-input form-field noselect" required>
+                <label class="form-label noselect" for="firstname">First Name</label>
+            </div>
+            <div class="form--group mt-2">
+                <input id="lastname" name="LNAME" type="text" placeholder="&nbsp;" class="login-input form-field noselect" required>
+                <label class="form-label noselect" for="lastname">Last Name</label>
+            </div>
+            <div class="form--group mt-2">
+                <input id="year" name="MMERGE3" type="text" placeholder="&nbsp;" class="login-input form-field noselect" required>
+                <label class="form-label noselect" for="year">Year</label>
+            </div>
+            <div class="form--group mt-2">
+                <input id="discipline" name="MMERGE4" type="text" placeholder="&nbsp;" class="login-input form-field noselect" required>
+                <label class="form-label noselect" for="discipline">Discipline</label>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_dc4e152d34bc3e84cf1fa96d4_a5fd1dbde3" tabindex="-1" value="">
+            </div>
+            <div class="clear mt-4">
+                <input type="submit" value="Sign Up" name="subscribe" id="signup" class="btn-1 btn mx-auto">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container-fluid bg-blue footer position-relative d-none d-md-block border-top-dashed border-gold">
+    <span class="position-absolute"
+          style="bottom:0.75em;left:1em;">This website was created by your fellow engineers.</span>
+    <span class="position-absolute" style="bottom:0.75em;right:1em;">© 2020 The Blue & Gold Committee</span>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

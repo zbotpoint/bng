@@ -695,3 +695,66 @@ input.booking {
     height: 43vh;
   }
 }
+
+.form--group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 100%;
+  margin: auto;
+}
+.form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid palette(brand,"l-blue");
+  outline: 0;
+  font-size: 1.3rem;
+  color: palette(brand,"gold");
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: palette(brand,"l-blue");
+}
+
+.form-field:focus {
+  ~ .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: palette(brand,"gold");
+    font-weight:700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right,palette(brand,"gold"),palette(brand,"l-blue"));
+  border-image-slice: 1;
+}

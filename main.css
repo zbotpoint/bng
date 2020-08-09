@@ -10770,4 +10770,66 @@ input.booking::placeholder {
   }
 }
 
+.form--group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 100%;
+  margin: auto;
+}
+
+.form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #A5A3E1;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #f7d116;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form-field::placeholder {
+  color: transparent;
+}
+.form-field:placeholder-shown ~ .form-label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #A5A3E1;
+}
+
+.form-field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #f7d116, #A5A3E1);
+  border-image-slice: 1;
+}
+.form-field:focus ~ .form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #f7d116;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=main.css.map */
