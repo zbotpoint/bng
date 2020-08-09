@@ -21,4 +21,6 @@ function send($form) {
             }
         }
     });
+    $(".hidden-on-submit").children().addClass("d-none");
+    $(".show-on-submit").removeClass("d-none");
 }

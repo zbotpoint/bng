@@ -273,6 +273,9 @@ body > section {
 }
 .footer {
   height:3em;
+  &.position-fixed {
+    bottom:0;
+  }
 }
 span.contact-text a {
   font-size: xx-large;
@@ -757,4 +760,13 @@ input.booking {
   border-width: 3px;
   border-image: linear-gradient(to right,palette(brand,"gold"),palette(brand,"l-blue"));
   border-image-slice: 1;
+}
+.signup div.col-md-4 a {
+  margin: 10px 0;
+  color: palette(brand,"l-blue") !important;
+  transition: color 0.5s ease-in-out;
+  text-decoration: none !important;
+  &:hover {
+    color: palette(brand,"gold") !important;
+  }
 }

@@ -10383,6 +10383,9 @@ body > section:first-of-type {
 .footer {
   height: 3em;
 }
+.footer.position-fixed {
+  bottom: 0;
+}
 
 span.contact-text a {
   font-size: xx-large;
@@ -10830,6 +10833,16 @@ input.booking::placeholder {
   font-size: 1rem;
   color: #f7d116;
   font-weight: 700;
+}
+
+.signup div.col-md-4 a {
+  margin: 10px 0;
+  color: #A5A3E1 !important;
+  transition: color 0.5s ease-in-out;
+  text-decoration: none !important;
+}
+.signup div.col-md-4 a:hover {
+  color: #f7d116 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
