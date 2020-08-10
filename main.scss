@@ -659,7 +659,7 @@ input.booking {
     height: 40vh;
     flex-grow:1;
     margin: 1em;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.25s ease-out;
   }
   &::after {
     flex-grow: 10;
@@ -695,7 +695,7 @@ input.booking {
 }
 .gallery li:hover {
   @include media-breakpoint-up(md) {
-    height: 43vh;
+    height: 41vh;
   }
 }
 
@@ -774,5 +774,18 @@ input.booking {
 .signup div.col-lg-5.mt-12 {
   @include media-breakpoint-down(md) {
     margin-top: 2rem;
+  }
+}
+
+.pride h2:not(.header) {
+  opacity: 0.8;
+  transition: opacity 0.25s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+  & a {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: inherit;
   }
 }

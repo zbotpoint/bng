@@ -10732,7 +10732,7 @@ input.booking::placeholder {
   height: 40vh;
   flex-grow: 1;
   margin: 1em;
-  transition: height 0.5s ease-in-out;
+  transition: height 0.25s ease-out;
 }
 .gallery::after {
   flex-grow: 10;
@@ -10769,7 +10769,7 @@ input.booking::placeholder {
 
 @media (min-width: 768px) {
   .gallery li:hover {
-    height: 43vh;
+    height: 41vh;
   }
 }
 
@@ -10849,6 +10849,19 @@ input.booking::placeholder {
   .signup div.col-lg-5.mt-12 {
     margin-top: 2rem;
   }
+}
+
+.pride h2:not(.header) {
+  opacity: 0.8;
+  transition: opacity 0.25s ease-in-out;
+}
+.pride h2:not(.header):hover {
+  opacity: 1;
+}
+.pride h2:not(.header) a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
