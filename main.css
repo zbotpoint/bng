@@ -10864,6 +10864,10 @@ input.booking::placeholder {
   font-size: inherit;
 }
 
+.pride h2 span {
+  font-size: inherit;
+}
+
 .events .btn {
   display: inline-block;
   vertical-align: middle;
