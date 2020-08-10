@@ -789,3 +789,27 @@ input.booking {
     font-size: inherit;
   }
 }
+
+.events {
+  & .btn {
+    display:inline-block;
+    vertical-align: middle;
+    font-size: x-large;
+    &-1 {
+      border: 2px dashed palette(brand,"blue");
+      background-color: transparent !important;
+      color: palette(brand,"blue") !important;
+
+      &:hover {
+        border: 2px solid palette(brand,"blue");
+        color: palette(brand,"l-gold") !important;
+        background-color: palette(brand,"blue") !important;
+      }
+      &.disabled {
+        background-color: palette(base,"grey-2") !important;
+        border: 2px solid palette(base,"grey-2") !important;
+        color: palette(base,"grey-3") !important;
+      }
+    }
+  }
+}

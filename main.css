@@ -10864,4 +10864,25 @@ input.booking::placeholder {
   font-size: inherit;
 }
 
+.events .btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: x-large;
+}
+.events .btn-1 {
+  border: 2px dashed #201e5c;
+  background-color: transparent !important;
+  color: #201e5c !important;
+}
+.events .btn-1:hover {
+  border: 2px solid #201e5c;
+  color: #FDF3C4 !important;
+  background-color: #201e5c !important;
+}
+.events .btn-1.disabled {
+  background-color: #444 !important;
+  border: 2px solid #444 !important;
+  color: #888 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
