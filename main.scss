@@ -770,3 +770,9 @@ input.booking {
     color: palette(brand,"gold") !important;
   }
 }
+
+.signup div.col-lg-5.mt-12 {
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
+}
