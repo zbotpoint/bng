@@ -10713,6 +10713,21 @@ input.booking::placeholder {
     font-size: x-large;
   }
 }
+.pride h2:not(.header) {
+  opacity: 0.8;
+  transition: opacity 0.25s ease-in-out;
+}
+.pride h2:not(.header):hover {
+  opacity: 1;
+}
+.pride h2:not(.header) a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+.pride h2 span {
+  font-size: inherit;
+}
 
 .opacity-0 {
   opacity: 0;
@@ -10844,49 +10859,60 @@ input.booking::placeholder {
 .signup div.col-md-4 a:hover {
   color: #f7d116 !important;
 }
-
 @media (max-width: 991.98px) {
   .signup div.col-lg-5.mt-12 {
     margin-top: 2rem;
   }
 }
 
-.pride h2:not(.header) {
-  opacity: 0.8;
-  transition: opacity 0.25s ease-in-out;
-}
-.pride h2:not(.header):hover {
-  opacity: 1;
-}
-.pride h2:not(.header) a {
-  text-decoration: inherit;
-  color: inherit;
-  font-size: inherit;
-}
-
-.pride h2 span {
-  font-size: inherit;
-}
-
 .events .btn {
   display: inline-block;
   vertical-align: middle;
   font-size: x-large;
+  mix-blend-mode: unset;
 }
 .events .btn-1 {
-  border: 2px dashed #201e5c;
+  border: 2px dashed #ffec8e;
   background-color: transparent !important;
-  color: #201e5c !important;
+  color: #ffec8e !important;
 }
 .events .btn-1:hover {
-  border: 2px solid #201e5c;
-  color: #FDF3C4 !important;
-  background-color: #201e5c !important;
+  border-style: solid;
+  color: #59a1c6 !important;
+  background-color: #ffec8e !important;
 }
-.events .btn-1.disabled {
+.events .btn.disabled {
   background-color: #444 !important;
   border: 2px solid #444 !important;
   color: #888 !important;
+  opacity: 0.3;
+}
+.events .title-container {
+  background-color: #ccc;
+  margin-top: 0;
+}
+.events .text-grey {
+  color: #888;
+}
+.events .tools101 {
+  background: linear-gradient(to right, rgba(104, 186, 152, 0.95), rgba(104, 186, 152, 0.95), transparent), url("pride/1.jpg");
+}
+.events .remembrance {
+  background: linear-gradient(to right, rgba(255, 142, 142, 0.95), rgba(255, 142, 142, 0.95), transparent), url("pride/9.jpg");
+}
+.events .ndravaw {
+  background: linear-gradient(to right, rgba(131, 114, 187, 0.95), rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
+}
+.events .godivaweek {
+  background: linear-gradient(to right, rgba(89, 161, 198, 0.95), rgba(89, 161, 198, 0.95), transparent), url("pride/13.jpg");
+  color: #ffec8e;
+}
+.events .tools102 {
+  background: linear-gradient(to right, rgba(93, 167, 167, 0.95), rgba(93, 167, 167, 0.95), transparent), url("pride/17.jpg");
+}
+.events .faq-body a, .events .faq-body p {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -639,6 +639,21 @@ input.booking {
       font-size: x-large;
     }
   }
+  & h2:not(.header) {
+    opacity: 0.8;
+    transition: opacity 0.25s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+    & a {
+      text-decoration: inherit;
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+  & h2 span {
+    font-size:inherit;
+  }
 }
 
 .opacity-0 {
@@ -761,36 +776,21 @@ input.booking {
   border-image: linear-gradient(to right,palette(brand,"gold"),palette(brand,"l-blue"));
   border-image-slice: 1;
 }
-.signup div.col-md-4 a {
-  margin: 10px 0;
-  color: palette(brand,"l-blue") !important;
-  transition: color 0.5s ease-in-out;
-  text-decoration: none !important;
-  &:hover {
-    color: palette(brand,"gold") !important;
+.signup {
+  & div.col-md-4 a {
+    margin: 10px 0;
+    color: palette(brand,"l-blue") !important;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none !important;
+    &:hover {
+      color: palette(brand,"gold") !important;
+    }
   }
-}
-
-.signup div.col-lg-5.mt-12 {
-  @include media-breakpoint-down(md) {
-    margin-top: 2rem;
+  & div.col-lg-5.mt-12 {
+    @include media-breakpoint-down(md) {
+      margin-top: 2rem;
+    }
   }
-}
-
-.pride h2:not(.header) {
-  opacity: 0.8;
-  transition: opacity 0.25s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
-  & a {
-    text-decoration: inherit;
-    color: inherit;
-    font-size: inherit;
-  }
-}
-.pride h2 span {
-  font-size:inherit;
 }
 
 .events {
@@ -798,21 +798,74 @@ input.booking {
     display:inline-block;
     vertical-align: middle;
     font-size: x-large;
+    mix-blend-mode: unset;
     &-1 {
-      border: 2px dashed palette(brand,"blue");
+      border: 2px dashed palette(skule,"gold");
       background-color: transparent !important;
-      color: palette(brand,"blue") !important;
+      color: palette(skule,"gold") !important;
 
       &:hover {
-        border: 2px solid palette(brand,"blue");
-        color: palette(brand,"l-gold") !important;
-        background-color: palette(brand,"blue") !important;
-      }
-      &.disabled {
-        background-color: palette(base,"grey-2") !important;
-        border: 2px solid palette(base,"grey-2") !important;
-        color: palette(base,"grey-3") !important;
+        border-style: solid;
+        color: palette(skule,"blue") !important;
+        background-color: palette(skule,"gold") !important;
       }
     }
+    &.disabled {
+      background-color: palette(base,"grey-2") !important;
+      border: 2px solid palette(base,"grey-2") !important;
+      color: palette(base,"grey-3") !important;
+      opacity:0.3;
+    }
+  }
+  & .title-container {
+    background-color: palette(base,"grey-4");
+    margin-top:0;
+  }
+  & .text-grey {
+    color: palette(base,"grey-3");
+  }
+  & .tools101 {
+    background:
+      linear-gradient(to right,
+        transparentize(palette(skule,"green"),0.05),
+        transparentize(palette(skule,"green"),0.05),
+        transparent), url('pride/1.jpg');
+  }
+  & .remembrance {
+    background:
+      linear-gradient(to right,
+        transparentize(palette(skule,"red"),0.05),
+        transparentize(palette(skule,"red"),0.05),
+      transparent),
+      url('pride/9.jpg');
+  }
+  & .ndravaw {
+    background:
+      linear-gradient(to right,
+        transparentize(palette(skule,"purple"),0.05),
+        transparentize(palette(skule,"purple"),0.05),
+        transparent),
+      url('pride/5.jpg');
+  }
+  & .godivaweek {
+    background:
+      linear-gradient(to right,
+        transparentize(palette(skule,"blue"),0.05),
+        transparentize(palette(skule,"blue"),0.05),
+        transparent),
+      url('pride/13.jpg');
+    color: palette(skule,"gold");
+  }
+  & .tools102 {
+    background:
+      linear-gradient(to right,
+        transparentize(palette(skule,"teal"),0.05),
+        transparentize(palette(skule,"teal"),0.05),
+        transparent),
+      url('pride/17.jpg');
+  }
+  & .faq-body a, .faq-body p {
+    text-decoration: none;
+    color: white;
   }
 }
