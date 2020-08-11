@@ -10895,24 +10895,33 @@ input.booking::placeholder {
   color: #888;
 }
 .events .tools101 {
-  background: linear-gradient(to right, rgba(104, 186, 152, 0.95), rgba(104, 186, 152, 0.95), transparent), url("pride/1.jpg");
+  background: linear-gradient(to right, #68ba98, rgba(104, 186, 152, 0.95), transparent), url("events/tools101.jpg") right;
 }
 .events .remembrance {
   background: linear-gradient(to right, rgba(255, 142, 142, 0.95), rgba(255, 142, 142, 0.95), transparent), url("pride/9.jpg");
+  background-size: cover;
 }
 .events .ndravaw {
   background: linear-gradient(to right, rgba(131, 114, 187, 0.95), rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
+  background-size: cover;
 }
 .events .godivaweek {
-  background: linear-gradient(to right, rgba(89, 161, 198, 0.95), rgba(89, 161, 198, 0.95), transparent), url("pride/13.jpg");
+  background: linear-gradient(to right, rgba(89, 161, 198, 0.95), rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
   color: #ffec8e;
 }
 .events .tools102 {
-  background: linear-gradient(to right, rgba(93, 167, 167, 0.95), rgba(93, 167, 167, 0.95), transparent), url("pride/17.jpg");
+  background: linear-gradient(to right, rgba(93, 167, 167, 0.95), rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
+  background-size: cover;
 }
 .events .faq-body a, .events .faq-body p {
   text-decoration: none;
   color: white;
+  display: inline-block;
+}
+.events a {
+  color: white;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

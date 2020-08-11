@@ -825,11 +825,10 @@ input.booking {
     color: palette(base,"grey-3");
   }
   & .tools101 {
-    background:
-      linear-gradient(to right,
-        transparentize(palette(skule,"green"),0.05),
-        transparentize(palette(skule,"green"),0.05),
-        transparent), url('pride/1.jpg');
+    background: linear-gradient(to right,
+      transparentize(palette(skule, "green"), 0.0),
+      transparentize(palette(skule, "green"), 0.05),
+      transparent), url('events/tools101.jpg') right;
   }
   & .remembrance {
     background:
@@ -838,6 +837,7 @@ input.booking {
         transparentize(palette(skule,"red"),0.05),
       transparent),
       url('pride/9.jpg');
+    background-size: cover;
   }
   & .ndravaw {
     background:
@@ -846,6 +846,7 @@ input.booking {
         transparentize(palette(skule,"purple"),0.05),
         transparent),
       url('pride/5.jpg');
+    background-size: cover;
   }
   & .godivaweek {
     background:
@@ -853,7 +854,7 @@ input.booking {
         transparentize(palette(skule,"blue"),0.05),
         transparentize(palette(skule,"blue"),0.05),
         transparent),
-      url('pride/13.jpg');
+      url('events/godivaweek.jpg') right;
     color: palette(skule,"gold");
   }
   & .tools102 {
@@ -862,10 +863,17 @@ input.booking {
         transparentize(palette(skule,"teal"),0.05),
         transparentize(palette(skule,"teal"),0.05),
         transparent),
-      url('pride/17.jpg');
+      url('events/tools102.jpg') right;
+    background-size: cover;
   }
   & .faq-body a, .faq-body p {
     text-decoration: none;
     color: white;
+    display:inline-block;
+  }
+  & a {
+    color: white;
+    display:inline-block;
+    text-decoration: underline;
   }
 }
