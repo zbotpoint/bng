@@ -824,25 +824,33 @@ input.booking {
   & .text-grey {
     color: palette(base,"grey-3");
   }
+  & .bedraces {
+    background: linear-gradient(to right,
+      palette(brand, "gold"),
+      transparentize(palette(brand, "gold"), 0.05),
+      transparent), url('events/bedraces.jpg') right;
+    color: palette(brand,"m-blue");
+    background-size: cover;
+  }
   & .tools101 {
     background: linear-gradient(to right,
-      transparentize(palette(skule, "green"), 0.0),
+      palette(skule, "green"),
       transparentize(palette(skule, "green"), 0.05),
       transparent), url('events/tools101.jpg') right;
   }
   & .remembrance {
     background:
       linear-gradient(to right,
-        transparentize(palette(skule,"red"),0.05),
-        transparentize(palette(skule,"red"),0.05),
+        palette(rainbow,"red"),
+        transparentize(palette(rainbow,"red"),0.05),
       transparent),
-      url('pride/9.jpg');
+      url('events/remembrance.jpg');
     background-size: cover;
   }
   & .ndravaw {
     background:
       linear-gradient(to right,
-        transparentize(palette(skule,"purple"),0.05),
+        palette(skule,"purple"),
         transparentize(palette(skule,"purple"),0.05),
         transparent),
       url('pride/5.jpg');
@@ -851,7 +859,7 @@ input.booking {
   & .godivaweek {
     background:
       linear-gradient(to right,
-        transparentize(palette(skule,"blue"),0.05),
+        palette(skule,"blue"),
         transparentize(palette(skule,"blue"),0.05),
         transparent),
       url('events/godivaweek.jpg') right;
@@ -860,11 +868,51 @@ input.booking {
   & .tools102 {
     background:
       linear-gradient(to right,
-        transparentize(palette(skule,"teal"),0.05),
+        palette(skule,"teal"),
         transparentize(palette(skule,"teal"),0.05),
         transparent),
       url('events/tools102.jpg') right;
     background-size: cover;
+  }
+  & .elections {
+    background:
+      linear-gradient(to right,
+        palette(skule,"black"),
+        transparentize(palette(skule,"black"),0.05),
+        transparent),
+      url('events/elections.jpg') right;
+  }
+  & .dusted {
+    background:
+      linear-gradient(to right,
+        palette(brand,"blue"),
+        transparentize(palette(brand,"blue"),0.05),
+        transparent),
+      url('events/dusted.jpg') right;
+    background-size:cover;
+    color: palette(brand,"l-blue");
+    & .btn-3 {
+        border: 2px dashed palette(brand,"l-blue");
+        background-color: transparent !important;
+        color: palette(brand,"l-blue") !important;
+
+        &:hover {
+          border-style: solid;
+          color: palette(brand,"blue") !important;
+          background-color: palette(brand,"l-blue") !important;
+        }
+      }
+  }
+  & .pride {
+    background:
+      linear-gradient(to right,
+        palette(skule,"red"),
+        transparentize(palette(skule,"red"),0.05),
+        transparent),
+      url('pride/2.jpg') right;
+    & h2 {
+      opacity:1;
+    }
   }
   & .faq-body a, .faq-body p {
     text-decoration: none;
@@ -875,5 +923,9 @@ input.booking {
     color: white;
     display:inline-block;
     text-decoration: underline;
+  }
+  & nav a {
+    color: unset;
+    text-decoration: none;
   }
 }

@@ -10894,24 +10894,53 @@ input.booking::placeholder {
 .events .text-grey {
   color: #888;
 }
+.events .bedraces {
+  background: linear-gradient(to right, #f7d116, rgba(247, 209, 22, 0.95), transparent), url("events/bedraces.jpg") right;
+  color: #4B4799;
+  background-size: cover;
+}
 .events .tools101 {
   background: linear-gradient(to right, #68ba98, rgba(104, 186, 152, 0.95), transparent), url("events/tools101.jpg") right;
 }
 .events .remembrance {
-  background: linear-gradient(to right, rgba(255, 142, 142, 0.95), rgba(255, 142, 142, 0.95), transparent), url("pride/9.jpg");
+  background: linear-gradient(to right, #f72116, rgba(247, 33, 22, 0.95), transparent), url("events/remembrance.jpg");
   background-size: cover;
 }
 .events .ndravaw {
-  background: linear-gradient(to right, rgba(131, 114, 187, 0.95), rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
+  background: linear-gradient(to right, #8372bb, rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
   background-size: cover;
 }
 .events .godivaweek {
-  background: linear-gradient(to right, rgba(89, 161, 198, 0.95), rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
+  background: linear-gradient(to right, #59a1c6, rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
   color: #ffec8e;
 }
 .events .tools102 {
-  background: linear-gradient(to right, rgba(93, 167, 167, 0.95), rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
+  background: linear-gradient(to right, #5da7a7, rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
   background-size: cover;
+}
+.events .elections {
+  background: linear-gradient(to right, #0a0a0a, rgba(10, 10, 10, 0.95), transparent), url("events/elections.jpg") right;
+}
+.events .dusted {
+  background: linear-gradient(to right, #201e5c, rgba(32, 30, 92, 0.95), transparent), url("events/dusted.jpg") right;
+  background-size: cover;
+  color: #A5A3E1;
+}
+.events .dusted .btn-3 {
+  border: 2px dashed #A5A3E1;
+  background-color: transparent !important;
+  color: #A5A3E1 !important;
+}
+.events .dusted .btn-3:hover {
+  border-style: solid;
+  color: #201e5c !important;
+  background-color: #A5A3E1 !important;
+}
+.events .pride {
+  background: linear-gradient(to right, #ff8e8e, rgba(255, 142, 142, 0.95), transparent), url("pride/2.jpg") right;
+}
+.events .pride h2 {
+  opacity: 1;
 }
 .events .faq-body a, .events .faq-body p {
   text-decoration: none;
@@ -10922,6 +10951,10 @@ input.booking::placeholder {
   color: white;
   display: inline-block;
   text-decoration: underline;
+}
+.events nav a {
+  color: unset;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
