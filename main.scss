@@ -794,32 +794,12 @@ input.booking {
 }
 
 .events {
-  & .btn {
-    display:inline-block;
-    vertical-align: middle;
-    font-size: x-large;
-    mix-blend-mode: unset;
-    &-1 {
-      border: 2px dashed palette(skule,"gold");
-      background-color: transparent !important;
-      color: palette(skule,"gold") !important;
-
-      &:hover {
-        border-style: solid;
-        color: palette(skule,"blue") !important;
-        background-color: palette(skule,"gold") !important;
-      }
-    }
-    &.disabled {
-      background-color: palette(base,"grey-2") !important;
-      border: 2px solid palette(base,"grey-2") !important;
-      color: palette(base,"grey-3") !important;
-      opacity:0.3;
-    }
-  }
   & .title-container {
-    background-color: palette(base,"grey-4");
+    background: url("img-index.png") 0 20%;
     margin-top:0;
+    & .btn {
+      font-size: x-large;
+    }
   }
   & .text-grey {
     color: palette(base,"grey-3");
@@ -829,7 +809,7 @@ input.booking {
       palette(brand, "gold"),
       transparentize(palette(brand, "gold"), 0.05),
       transparent), url('events/bedraces.jpg') right;
-    color: palette(brand,"m-blue");
+    color: palette(base,"white");
     background-size: cover;
   }
   & .tools101 {
@@ -864,6 +844,23 @@ input.booking {
         transparent),
       url('events/godivaweek.jpg') right;
     color: palette(skule,"gold");
+    & .btn-1 {
+        border: 2px dashed palette(skule,"gold");
+        background-color: transparent !important;
+        color: palette(skule,"gold") !important;
+
+        &:hover {
+          border-style: solid;
+          color: palette(skule,"blue") !important;
+          background-color: palette(skule,"gold") !important;
+        }
+        &.disabled {
+          background-color: palette(base,"grey-2") !important;
+          border: 2px solid palette(base,"grey-2") !important;
+          color: palette(base,"grey-3") !important;
+          opacity:0.3;
+        }
+      }
   }
   & .tools102 {
     background:

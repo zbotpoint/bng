@@ -10865,38 +10865,19 @@ input.booking::placeholder {
   }
 }
 
-.events .btn {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: x-large;
-  mix-blend-mode: unset;
-}
-.events .btn-1 {
-  border: 2px dashed #ffec8e;
-  background-color: transparent !important;
-  color: #ffec8e !important;
-}
-.events .btn-1:hover {
-  border-style: solid;
-  color: #59a1c6 !important;
-  background-color: #ffec8e !important;
-}
-.events .btn.disabled {
-  background-color: #444 !important;
-  border: 2px solid #444 !important;
-  color: #888 !important;
-  opacity: 0.3;
-}
 .events .title-container {
-  background-color: #ccc;
+  background: url("img-index.png") 0 20%;
   margin-top: 0;
+}
+.events .title-container .btn {
+  font-size: x-large;
 }
 .events .text-grey {
   color: #888;
 }
 .events .bedraces {
   background: linear-gradient(to right, #f7d116, rgba(247, 209, 22, 0.95), transparent), url("events/bedraces.jpg") right;
-  color: #4B4799;
+  color: #fff;
   background-size: cover;
 }
 .events .tools101 {
@@ -10913,6 +10894,22 @@ input.booking::placeholder {
 .events .godivaweek {
   background: linear-gradient(to right, #59a1c6, rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
   color: #ffec8e;
+}
+.events .godivaweek .btn-1 {
+  border: 2px dashed #ffec8e;
+  background-color: transparent !important;
+  color: #ffec8e !important;
+}
+.events .godivaweek .btn-1:hover {
+  border-style: solid;
+  color: #59a1c6 !important;
+  background-color: #ffec8e !important;
+}
+.events .godivaweek .btn-1.disabled {
+  background-color: #444 !important;
+  border: 2px solid #444 !important;
+  color: #888 !important;
+  opacity: 0.3;
 }
 .events .tools102 {
   background: linear-gradient(to right, #5da7a7, rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
