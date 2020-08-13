@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    var tools = new Set();
-    var base_form_url = 'https://docs.google.com/forms/d/e/1FAIpQLSeuOQg5Qp_rNLLfaJgIbxokIJ6MWzhf4Ef2iivCISCKp1rWqQ/viewform?usp=pp_url&entry.1754869149=';
+    let tools = new Set();
+    let base_form_url = 'https://docs.google.com/forms/d/e/1FAIpQLSeuOQg5Qp_rNLLfaJgIbxokIJ6MWzhf4Ef2iivCISCKp1rWqQ/viewform?usp=pp_url&entry.1754869149=';
 
     document.querySelectorAll('button.btn.btn-2:not(#submitter)').forEach(item => {
         item.addEventListener('click', event => {
-            var elem = $(event.target).is("button") ? $(event.target) : $(event.target).parent();
-            var tool = elem.parent().children('p').text();
+            let elem = $(event.target).is("button") ? $(event.target) : $(event.target).parent();
+            let tool = elem.parent().children('p').text();
             if (elem.hasClass('disabled')) {
                 elem.removeClass('disabled').children("span").text("Book").focusout();
                 tools.delete(tool);
@@ -20,7 +20,7 @@ $(document).ready(function () {
             }
         })
     })
-    document.getElementById("submitter").addEventListener('click', event => {
+    document.getElementById("submitter").addEventListener('click', () => {
         $("#submit-url").prop('href',base_form_url+encodeURIComponent(Array.from(tools).join('; ')))[0].click();
     })
 });

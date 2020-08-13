@@ -26,7 +26,7 @@ $(document).ready(function () {
     document.querySelectorAll('.faq-body a,.faq-body-dusted a').forEach(item => {
         item.addEventListener('click', event => {
             let a = $(event.target);
-            var p = $(event.target).next().next();
+            let p = $(event.target).next().next();
             if (p.hasClass("faq-hidden")) {
                 a.text("−"+a.text().slice(1));
                 p.removeClass("faq-hidden");
