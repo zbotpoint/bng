@@ -10865,6 +10865,11 @@ input.booking::placeholder {
   }
 }
 
+@media (max-width: 767.98px) {
+  .events h2 {
+    font-size: 35px;
+  }
+}
 .events .title-container {
   background: url("img-index.png") 0 20%;
   margin-top: 0;
@@ -10876,24 +10881,49 @@ input.booking::placeholder {
   color: #888;
 }
 .events .bedraces {
-  background: linear-gradient(to right, #f7d116, rgba(247, 209, 22, 0.95), transparent), url("events/bedraces.jpg") right;
+  background: #6c1a86;
   color: #fff;
-  background-size: cover;
+}
+@media (min-width: 768px) {
+  .events .bedraces {
+    background: linear-gradient(to right, #6c1a86, rgba(108, 26, 134, 0.95), transparent), url("events/bedraces.jpg") right;
+    background-size: cover;
+  }
 }
 .events .tools101 {
-  background: linear-gradient(to right, #68ba98, rgba(104, 186, 152, 0.95), transparent), url("events/tools101.jpg") right;
+  background: #68ba98;
+}
+@media (min-width: 768px) {
+  .events .tools101 {
+    background: linear-gradient(to right, #68ba98, rgba(104, 186, 152, 0.95), transparent), url("events/tools101.jpg") right;
+  }
 }
 .events .remembrance {
-  background: linear-gradient(to right, #f72116, rgba(247, 33, 22, 0.95), transparent), url("events/remembrance.jpg");
-  background-size: cover;
+  background: #f72116;
+}
+@media (min-width: 768px) {
+  .events .remembrance {
+    background: linear-gradient(to right, #f72116, rgba(247, 33, 22, 0.95), transparent), url("events/remembrance.jpg");
+    background-size: cover;
+  }
 }
 .events .ndravaw {
-  background: linear-gradient(to right, #8372bb, rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
-  background-size: cover;
+  background: #8372bb;
+}
+@media (min-width: 768px) {
+  .events .ndravaw {
+    background: linear-gradient(to right, #8372bb, rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
+    background-size: cover;
+  }
 }
 .events .godivaweek {
-  background: linear-gradient(to right, #59a1c6, rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
+  background: #59a1c6;
   color: #ffec8e;
+}
+@media (min-width: 768px) {
+  .events .godivaweek {
+    background: linear-gradient(to right, #59a1c6, rgba(89, 161, 198, 0.95), transparent), url("events/godivaweek.jpg") right;
+  }
 }
 .events .godivaweek .btn-1 {
   border: 2px dashed #ffec8e;
@@ -10912,16 +10942,31 @@ input.booking::placeholder {
   opacity: 0.3;
 }
 .events .tools102 {
-  background: linear-gradient(to right, #5da7a7, rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
-  background-size: cover;
+  background: #5da7a7;
+}
+@media (min-width: 768px) {
+  .events .tools102 {
+    background: linear-gradient(to right, #5da7a7, rgba(93, 167, 167, 0.95), transparent), url("events/tools102.jpg") right;
+    background-size: cover;
+  }
 }
 .events .elections {
-  background: linear-gradient(to right, #0a0a0a, rgba(10, 10, 10, 0.95), transparent), url("events/elections.jpg") right;
+  background: black;
+}
+@media (min-width: 768px) {
+  .events .elections {
+    background: linear-gradient(to right, #0a0a0a, rgba(10, 10, 10, 0.95), transparent), url("events/elections.jpg") right;
+  }
 }
 .events .dusted {
-  background: linear-gradient(to right, #201e5c, rgba(32, 30, 92, 0.95), transparent), url("events/dusted.jpg") right;
-  background-size: cover;
+  background: #201e5c;
   color: #A5A3E1;
+}
+@media (min-width: 768px) {
+  .events .dusted {
+    background: linear-gradient(to right, #201e5c, rgba(32, 30, 92, 0.95), transparent), url("events/dusted.jpg") right;
+    background-size: cover;
+  }
 }
 .events .dusted .btn-3 {
   border: 2px dashed #A5A3E1;
@@ -10934,20 +10979,19 @@ input.booking::placeholder {
   background-color: #A5A3E1 !important;
 }
 .events .pride {
-  background: linear-gradient(to right, #ff8e8e, rgba(255, 142, 142, 0.95), transparent), url("pride/2.jpg") right;
+  background: #ff8e8e;
+}
+@media (min-width: 768px) {
+  .events .pride {
+    background: linear-gradient(to right, #ff8e8e, rgba(255, 142, 142, 0.95), transparent), url("pride/2.jpg") right;
+  }
 }
 .events .pride h2 {
   opacity: 1;
 }
-.events .faq-body a, .events .faq-body p {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-}
 .events a {
-  color: white;
   display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .events nav a {
   color: unset;

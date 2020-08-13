@@ -794,6 +794,11 @@ input.booking {
 }
 
 .events {
+  & h2 {
+    @include media-breakpoint-down(sm) {
+      font-size:35px;
+    }
+  }
   & .title-container {
     background: url("img-index.png") 0 20%;
     margin-top:0;
@@ -805,44 +810,56 @@ input.booking {
     color: palette(base,"grey-3");
   }
   & .bedraces {
-    background: linear-gradient(to right,
-      palette(brand, "gold"),
-      transparentize(palette(brand, "gold"), 0.05),
-      transparent), url('events/bedraces.jpg') right;
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(rainbow, "purple"),
+        transparentize(palette(rainbow, "purple"), 0.05),
+        transparent), url('events/bedraces.jpg') right;
+      background-size: cover;
+    }
+    background: palette(rainbow,"purple");
     color: palette(base,"white");
-    background-size: cover;
   }
   & .tools101 {
-    background: linear-gradient(to right,
-      palette(skule, "green"),
-      transparentize(palette(skule, "green"), 0.05),
-      transparent), url('events/tools101.jpg') right;
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "green"),
+        transparentize(palette(skule, "green"), 0.05),
+        transparent), url('events/tools101.jpg') right;
+    }
+    background: palette(skule, "green");
   }
   & .remembrance {
-    background:
-      linear-gradient(to right,
-        palette(rainbow,"red"),
-        transparentize(palette(rainbow,"red"),0.05),
-      transparent),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(rainbow, "red"),
+        transparentize(palette(rainbow, "red"), 0.05),
+        transparent),
       url('events/remembrance.jpg');
-    background-size: cover;
+      background-size: cover;
+    }
+    background: palette(rainbow,"red");
   }
   & .ndravaw {
-    background:
-      linear-gradient(to right,
-        palette(skule,"purple"),
-        transparentize(palette(skule,"purple"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "purple"),
+        transparentize(palette(skule, "purple"), 0.05),
         transparent),
       url('pride/5.jpg');
-    background-size: cover;
+      background-size: cover;
+    }
+    background: palette(skule,"purple");
   }
   & .godivaweek {
-    background:
-      linear-gradient(to right,
-        palette(skule,"blue"),
-        transparentize(palette(skule,"blue"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "blue"),
+        transparentize(palette(skule, "blue"), 0.05),
         transparent),
       url('events/godivaweek.jpg') right;
+    }
+    background: palette(skule,"blue");
     color: palette(skule,"gold");
     & .btn-1 {
         border: 2px dashed palette(skule,"gold");
@@ -863,30 +880,36 @@ input.booking {
       }
   }
   & .tools102 {
-    background:
-      linear-gradient(to right,
-        palette(skule,"teal"),
-        transparentize(palette(skule,"teal"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "teal"),
+        transparentize(palette(skule, "teal"), 0.05),
         transparent),
       url('events/tools102.jpg') right;
-    background-size: cover;
+      background-size: cover;
+    }
+    background: palette(skule,"teal");
   }
   & .elections {
-    background:
-      linear-gradient(to right,
-        palette(skule,"black"),
-        transparentize(palette(skule,"black"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "black"),
+        transparentize(palette(skule, "black"), 0.05),
         transparent),
       url('events/elections.jpg') right;
+    }
+    background: black;
   }
   & .dusted {
-    background:
-      linear-gradient(to right,
-        palette(brand,"blue"),
-        transparentize(palette(brand,"blue"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(brand, "blue"),
+        transparentize(palette(brand, "blue"), 0.05),
         transparent),
       url('events/dusted.jpg') right;
-    background-size:cover;
+      background-size: cover;
+    }
+    background: palette(brand,"blue");
     color: palette(brand,"l-blue");
     & .btn-3 {
         border: 2px dashed palette(brand,"l-blue");
@@ -901,25 +924,21 @@ input.booking {
       }
   }
   & .pride {
-    background:
-      linear-gradient(to right,
-        palette(skule,"red"),
-        transparentize(palette(skule,"red"),0.05),
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to right,
+        palette(skule, "red"),
+        transparentize(palette(skule, "red"), 0.05),
         transparent),
       url('pride/2.jpg') right;
+    }
+    background: palette(skule,"red");
     & h2 {
       opacity:1;
     }
   }
-  & .faq-body a, .faq-body p {
-    text-decoration: none;
-    color: white;
-    display:inline-block;
-  }
   & a {
-    color: white;
     display:inline-block;
-    text-decoration: underline;
+    text-decoration: none;
   }
   & nav a {
     color: unset;
