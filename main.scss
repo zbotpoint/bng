@@ -366,8 +366,10 @@ li a {
   font-size:large;
   min-width: 6em;
   @include media-breakpoint-down(sm) {
-    width:100%;
-    margin:0.5em 0 !important;
+    &,&~.dropdown-menu {
+      width: 100%;
+      margin: 0.5em 0 !important;
+    }
   }
   &-1 {
     @extend .text-gold;
@@ -421,7 +423,7 @@ li a {
     border: 2px dashed white;
     color: white;
 
-    &:hover {
+    &:hover,&:focus-within {
       border: 2px solid white;
       color: black;
       background-color: white;
@@ -840,17 +842,6 @@ input.booking {
     }
     background: palette(rainbow,"red");
   }
-  & .ndravaw {
-    @include media-breakpoint-up(md) {
-      background: linear-gradient(to right,
-        palette(skule, "purple"),
-        transparentize(palette(skule, "purple"), 0.05),
-        transparent),
-      url('pride/5.jpg');
-      background-size: cover;
-    }
-    background: palette(skule,"purple");
-  }
   & .godivaweek {
     @include media-breakpoint-up(md) {
       background: linear-gradient(to right,
@@ -929,7 +920,7 @@ input.booking {
         palette(skule, "red"),
         transparentize(palette(skule, "red"), 0.05),
         transparent),
-      url('pride/2.jpg') right;
+      url('events/pride.jpg') right;
     }
     background: palette(skule,"red");
     & h2 {

@@ -10463,7 +10463,7 @@ ul li {
   min-width: 6em;
 }
 @media (max-width: 767.98px) {
-  .btn {
+  .btn, .btn ~ .dropdown-menu {
     width: 100%;
     margin: 0.5em 0 !important;
   }
@@ -10513,7 +10513,7 @@ ul li {
   border: 2px dashed white;
   color: white;
 }
-.btn-3:hover {
+.btn-3:hover, .btn-3:focus-within {
   border: 2px solid white;
   color: black;
   background-color: white;
@@ -10907,15 +10907,6 @@ input.booking::placeholder {
     background-size: cover;
   }
 }
-.events .ndravaw {
-  background: #8372bb;
-}
-@media (min-width: 768px) {
-  .events .ndravaw {
-    background: linear-gradient(to right, #8372bb, rgba(131, 114, 187, 0.95), transparent), url("pride/5.jpg");
-    background-size: cover;
-  }
-}
 .events .godivaweek {
   background: #59a1c6;
   color: #ffec8e;
@@ -10983,7 +10974,7 @@ input.booking::placeholder {
 }
 @media (min-width: 768px) {
   .events .pride {
-    background: linear-gradient(to right, #ff8e8e, rgba(255, 142, 142, 0.95), transparent), url("pride/2.jpg") right;
+    background: linear-gradient(to right, #ff8e8e, rgba(255, 142, 142, 0.95), transparent), url("events/pride.jpg") right;
   }
 }
 .events .pride h2 {
