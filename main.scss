@@ -83,30 +83,8 @@ $palettes: (
     margin-bottom: -#{$len*0.5+0.5}rem;
   }
 }
-@each $elem in "a" "p" "span" {
-  #{$elem} {
-    font-size:large;
-    .bg-gold &, .bg-l-gold & {
-      &:not([class^="text-"]) {
-        @if $elem=="a" {
-          @extend .text-l-blue;
-        }
-        @else {
-          @extend .text-blue;
-        }
-      }
-    }
-    .bg-blue &, .bg-l-blue & {
-      &:not([class^="text-"]) {
-        @if $elem=="a" {
-          @extend .text-l-gold;
-        }
-        @else {
-          @extend .text-gold;
-        }
-      }
-    }
-  }
+a,p,span {
+  font-size:large;
 }
 
 $section-height: 50rem;
@@ -163,7 +141,7 @@ h3 {
 }
 
 .bg-l-blue a:not([class]), .bg-blue a:not([class]) {
-  @extend .text-l-gold;
+  @extend .text-gold;
 }
 
 // maybe make this md-up only
@@ -277,14 +255,11 @@ body > section {
     bottom:0;
   }
 }
-span.contact-text a {
+span.contact-text i {
   font-size: xx-large;
-  @extend .mx-2;
-  @extend .my-2;
+  margin: 0.5rem;
   text-decoration: none !important;
-  & i {
-    @extend .text-blue;
-  }
+  @extend .text-blue;
 }
 .signature-img {
   margin-top: -9.25em;
@@ -433,6 +408,23 @@ li a {
       background-color: palette(base,"grey-2") !important;
       border: 2px solid palette(base,"grey-2") !important;
       color: palette(base,"grey-3") !important;
+      opacity:0.3;
+    }
+  }
+  &-4 {
+    border: 2px dashed palette(brand,"blue");
+    color: palette(brand,"blue") !important;
+
+    &:hover,&:focus-within {
+      border: 2px solid palette(brand,"blue");
+      color: palette(brand,"l-gold") !important;
+      background-color: palette(brand,"blue");
+    }
+    &.disabled {
+      background-color: palette(base,"grey-2") !important;
+      border: 2px solid palette(base,"grey-2") !important;
+      color: palette(base,"grey-3") !important;
+      opacity:0.3;
     }
   }
 }
@@ -814,8 +806,8 @@ input.booking {
   & .bedraces {
     @include media-breakpoint-up(md) {
       background: linear-gradient(to right,
-        palette(rainbow, "purple"),
-        transparentize(palette(rainbow, "purple"), 0.05),
+        palette(skule, "purple"),
+        transparentize(palette(skule, "purple"), 0.05),
         transparent), url('events/bedraces.jpg') right;
       background-size: cover;
     }
@@ -884,12 +876,12 @@ input.booking {
   & .elections {
     @include media-breakpoint-up(md) {
       background: linear-gradient(to right,
-        palette(skule, "black"),
-        transparentize(palette(skule, "black"), 0.05),
+        palette(base, "grey-3"),
+        transparentize(palette(base, "grey-3"), 0.05),
         transparent),
       url('events/elections.jpg') right;
     }
-    background: black;
+    background: palette(base,"grey-3");
   }
   & .dusted {
     @include media-breakpoint-up(md) {
