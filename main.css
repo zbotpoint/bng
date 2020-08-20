@@ -10377,6 +10377,9 @@ body > section:first-of-type {
 .footer.position-fixed {
   bottom: 0;
 }
+.footer span {
+  color: #f7d116;
+}
 
 span.contact-text i {
   font-size: xx-large;
@@ -10876,7 +10879,7 @@ input.booking::placeholder {
 
 @media (max-width: 767.98px) {
   .events h2 {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 .events .title-container {

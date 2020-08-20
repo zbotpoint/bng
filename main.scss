@@ -254,6 +254,9 @@ body > section {
   &.position-fixed {
     bottom:0;
   }
+  & span {
+    color: palette(brand,"gold");
+  }
 }
 span.contact-text i {
   font-size: xx-large;
@@ -790,7 +793,7 @@ input.booking {
 .events {
   & h2 {
     @include media-breakpoint-down(sm) {
-      font-size:35px;
+      font-size:40px;
     }
   }
   & .title-container {
