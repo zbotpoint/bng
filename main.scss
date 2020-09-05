@@ -774,7 +774,7 @@ input.booking {
   border-image-slice: 1;
 }
 .signup {
-  & div.col-md-4 a {
+  & div.col-md-4 a, & div.col-md-6 a {
     margin: 10px 0;
     color: palette(brand,"l-blue") !important;
     transition: color 0.5s ease-in-out;
@@ -930,4 +930,8 @@ input.booking {
     color: unset;
     text-decoration: none;
   }
+}
+
+a.expandable {
+  color: palette(brand,"gold");
 }

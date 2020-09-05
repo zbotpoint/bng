@@ -10862,13 +10862,13 @@ input.booking::placeholder {
   font-weight: 700;
 }
 
-.signup div.col-md-4 a {
+.signup div.col-md-4 a, .signup div.col-md-6 a {
   margin: 10px 0;
   color: #A5A3E1 !important;
   transition: color 0.5s ease-in-out;
   text-decoration: none !important;
 }
-.signup div.col-md-4 a:hover {
+.signup div.col-md-4 a:hover, .signup div.col-md-6 a:hover {
   color: #f7d116 !important;
 }
 @media (max-width: 991.98px) {
@@ -10999,6 +10999,10 @@ input.booking::placeholder {
 .events nav a {
   color: unset;
   text-decoration: none;
+}
+
+a.expandable {
+  color: #f7d116;
 }
 
 /*# sourceMappingURL=main.css.map */

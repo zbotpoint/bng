@@ -23,7 +23,7 @@ $(document).ready(function () {
         let a = $(item).addClass("faq-hidden").prev().prev();
         a.text("+ "+ a.text());
     });
-    document.querySelectorAll('.faq-body a,.faq-body-dusted a').forEach(item => {
+    document.querySelectorAll('.faq-body a.expandable,.faq-body-dusted a').forEach(item => {
         item.addEventListener('click', event => {
             let a = $(event.target);
             let p = $(event.target).next().next();
