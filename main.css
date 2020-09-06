@@ -11005,4 +11005,9 @@ a.expandable {
   color: #f7d116;
 }
 
+.signature .subtext {
+  font-size: x-small;
+  white-space: normal;
+}
+
 /*# sourceMappingURL=main.css.map */
